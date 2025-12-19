@@ -1,0 +1,28 @@
+{
+  "id": "vla-integration/capstone-autonomous-humanoid",
+  "title": "Chapter 3: Capstone - Autonomous Humanoid",
+  "description": "Overview",
+  "source": "@site/docs/vla-integration/capstone-autonomous-humanoid.md",
+  "sourceDirName": "vla-integration",
+  "slug": "/vla-integration/capstone-autonomous-humanoid",
+  "permalink": "/docs/vla-integration/capstone-autonomous-humanoid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/capstone-autonomous-humanoid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Chapter 3: Capstone - Autonomous Humanoid",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: LLM-Based Cognitive Planning",
+    "permalink": "/docs/vla-integration/llm-cognitive-planning"
+  },
+  "next": {
+    "title": "Evaluation and Testing Framework",
+    "permalink": "/docs/vla-integration/evaluation-framework"
+  }
+}

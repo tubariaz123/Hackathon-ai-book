@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/assessment-questions",
+  "title": "Assessment Questions",
+  "description": "This document provides assessment questions for the AI-Robot Brain (NVIDIA Isaac™) module, organized by chapter and difficulty level. These questions test both theoretical understanding and practical application of the concepts covered.",
+  "source": "@site/docs/ai-robot-brain/assessment-questions.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/assessment-questions",
+  "permalink": "/docs/ai-robot-brain/assessment-questions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/assessment-questions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Assessment Questions",
+    "sidebar_position": 14
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Learning Objectives and Key Takeaways",
+    "permalink": "/docs/ai-robot-brain/learning-objectives"
+  },
+  "next": {
+    "title": "Quick Reference Guides",
+    "permalink": "/docs/ai-robot-brain/quick-reference"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ros2-humanoid-fundamentals/communication-model",
+  "title": "ROS 2 Communication Model",
+  "description": "Understanding nodes, topics, services, and basic reply-based controller flow for humanoid robots",
+  "source": "@site/docs/1-ros2-humanoid-fundamentals/communication-model.md",
+  "sourceDirName": "1-ros2-humanoid-fundamentals",
+  "slug": "/ros2-humanoid-fundamentals/communication-model",
+  "permalink": "/docs/ros2-humanoid-fundamentals/communication-model",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1-ros2-humanoid-fundamentals/communication-model.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "ROS 2 Communication Model",
+    "sidebar_label": "Communication Model",
+    "description": "Understanding nodes, topics, services, and basic reply-based controller flow for humanoid robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to ROS 2",
+    "permalink": "/docs/ros2-humanoid-fundamentals/intro-to-ros2"
+  },
+  "next": {
+    "title": "Robot Structure with URDF",
+    "permalink": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf"
+  }
+}

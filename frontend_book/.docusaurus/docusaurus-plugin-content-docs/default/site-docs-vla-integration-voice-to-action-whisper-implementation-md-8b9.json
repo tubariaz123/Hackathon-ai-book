@@ -1,0 +1,28 @@
+{
+  "id": "vla-integration/voice-to-action/whisper-implementation",
+  "title": "Speech-to-Text with Whisper",
+  "description": "This section covers the implementation of Whisper-based speech recognition for robotic applications. We'll explore how to deploy Whisper models, handle real-time audio input, and optimize for robotic command recognition.",
+  "source": "@site/docs/vla-integration/voice-to-action/whisper-implementation.md",
+  "sourceDirName": "vla-integration/voice-to-action",
+  "slug": "/vla-integration/voice-to-action/whisper-implementation",
+  "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/whisper-implementation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Speech-to-Text with Whisper",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Voice-to-Action",
+    "permalink": "/docs/vla-integration/voice-to-action/"
+  },
+  "next": {
+    "title": "Intent Extraction for Robots",
+    "permalink": "/docs/vla-integration/voice-to-action/intent-extraction"
+  }
+}

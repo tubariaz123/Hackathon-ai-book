@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/nav2-humanoid/humanoid-constraints",
+  "title": "Humanoid Robot Kinematic and Balance Constraints",
+  "description": "Humanoid robots have unique kinematic and balance constraints that significantly impact navigation planning and execution. Unlike wheeled robots, humanoid robots must maintain dynamic balance while navigating, which introduces complex constraints that must be considered in Nav2 configuration and path planning.",
+  "source": "@site/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints.md",
+  "sourceDirName": "ai-robot-brain/nav2-humanoid",
+  "slug": "/ai-robot-brain/nav2-humanoid/humanoid-constraints",
+  "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Humanoid Robot Kinematic and Balance Constraints",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nav2 Path Planning for Humanoid Robots",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning"
+  },
+  "next": {
+    "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting"
+  }
+}

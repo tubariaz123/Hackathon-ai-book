@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/quick-reference",
+  "title": "Quick Reference Guides",
+  "description": "This section provides quick reference materials for common Isaac Sim, Isaac ROS, and Nav2 operations and commands for humanoid robotics applications.",
+  "source": "@site/docs/ai-robot-brain/quick-reference.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/quick-reference",
+  "permalink": "/docs/ai-robot-brain/quick-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/quick-reference.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Quick Reference Guides",
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Assessment Questions",
+    "permalink": "/docs/ai-robot-brain/assessment-questions"
+  },
+  "next": {
+    "title": "Module 4: Vision-Language-Action (VLA)",
+    "permalink": "/docs/vla-integration/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+  "title": "Humanoid Robot Movement Execution with Nav2",
+  "description": "This tutorial covers the practical aspects of executing navigation commands with Nav2 on humanoid robots. You'll learn how to implement safe movement execution, handle humanoid-specific challenges, and integrate with balance control systems.",
+  "source": "@site/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution.md",
+  "sourceDirName": "ai-robot-brain/nav2-humanoid/tutorials",
+  "slug": "/ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+  "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Humanoid Robot Movement Execution with Nav2",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configuring Nav2 for Humanoid Robots",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration"
+  },
+  "next": {
+    "title": "Terminology and Definitions",
+    "permalink": "/docs/ai-robot-brain/terminology"
+  }
+}

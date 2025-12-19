@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/isaac-sim/tutorials/generate-data",
+  "title": "Generating Synthetic Training Data",
+  "description": "This tutorial will guide you through creating synthetic training data for humanoid robot perception models using Isaac Sim. You'll learn how to set up data recording, configure annotations, and generate diverse datasets.",
+  "source": "@site/docs/ai-robot-brain/isaac-sim/tutorials/generate-data.md",
+  "sourceDirName": "ai-robot-brain/isaac-sim/tutorials",
+  "slug": "/ai-robot-brain/isaac-sim/tutorials/generate-data",
+  "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/tutorials/generate-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Generating Synthetic Training Data",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Setting Up Isaac Sim Environment",
+    "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment"
+  },
+  "next": {
+    "title": "Isaac ROS Perception Overview",
+    "permalink": "/docs/ai-robot-brain/isaac-ros/perception-overview"
+  }
+}

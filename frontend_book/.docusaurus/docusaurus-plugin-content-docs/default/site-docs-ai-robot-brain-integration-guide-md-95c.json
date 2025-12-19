@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/integration-guide",
+  "title": "Complete Integration Guide",
+  "description": "This comprehensive guide brings together all three chapters of the AI-Robot Brain module, showing how Isaac Sim, Isaac ROS, and Nav2 work together to create a complete AI-driven navigation system for humanoid robots.",
+  "source": "@site/docs/ai-robot-brain/integration-guide.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/integration-guide",
+  "permalink": "/docs/ai-robot-brain/integration-guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/integration-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Complete Integration Guide",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cross-References and Integration Guide",
+    "permalink": "/docs/ai-robot-brain/cross-references"
+  },
+  "next": {
+    "title": "Learning Objectives and Key Takeaways",
+    "permalink": "/docs/ai-robot-brain/learning-objectives"
+  }
+}

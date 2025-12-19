@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/isaac-ros/configuration-examples",
+  "title": "Isaac ROS Configuration Examples and Best Practices",
+  "description": "This guide provides practical configuration examples and best practices for optimizing Isaac ROS perception and navigation systems for humanoid robotics applications. These examples will help you achieve optimal performance and reliability.",
+  "source": "@site/docs/ai-robot-brain/isaac-ros/configuration-examples.md",
+  "sourceDirName": "ai-robot-brain/isaac-ros",
+  "slug": "/ai-robot-brain/isaac-ros/configuration-examples",
+  "permalink": "/docs/ai-robot-brain/isaac-ros/configuration-examples",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/configuration-examples.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Isaac ROS Configuration Examples and Best Practices",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac ROS VSLAM and Navigation",
+    "permalink": "/docs/ai-robot-brain/isaac-ros/vslam-navigation"
+  },
+  "next": {
+    "title": "Isaac ROS Troubleshooting Guide",
+    "permalink": "/docs/ai-robot-brain/isaac-ros/troubleshooting"
+  }
+}

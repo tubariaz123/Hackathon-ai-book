@@ -1,0 +1,1466 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "C:\\Users\\sik\\Desktop\\ai-book\\frontend_book\\sidebars.js",
+          "contentPath": "C:\\Users\\sik\\Desktop\\ai-book\\frontend_book\\docs",
+          "contentPathLocalized": "C:\\Users\\sik\\Desktop\\ai-book\\frontend_book\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "id": "ai-robot-brain/assessment-questions",
+              "title": "Assessment Questions",
+              "description": "This document provides assessment questions for the AI-Robot Brain (NVIDIA Isaac™) module, organized by chapter and difficulty level. These questions test both theoretical understanding and practical application of the concepts covered.",
+              "source": "@site/docs/ai-robot-brain/assessment-questions.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/assessment-questions",
+              "permalink": "/docs/ai-robot-brain/assessment-questions",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/assessment-questions.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 14,
+              "frontMatter": {
+                "title": "Assessment Questions",
+                "sidebar_position": 14
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Learning Objectives and Key Takeaways",
+                "permalink": "/docs/ai-robot-brain/learning-objectives"
+              },
+              "next": {
+                "title": "Quick Reference Guides",
+                "permalink": "/docs/ai-robot-brain/quick-reference"
+              }
+            },
+            {
+              "id": "ai-robot-brain/cross-references",
+              "title": "Cross-References and Integration Guide",
+              "description": "This guide provides connections between concepts across the different chapters of the AI-Robot Brain module, highlighting how Isaac Sim, Isaac ROS, and Nav2 work together in humanoid robotics applications.",
+              "source": "@site/docs/ai-robot-brain/cross-references.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/cross-references",
+              "permalink": "/docs/ai-robot-brain/cross-references",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/cross-references.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "title": "Cross-References and Integration Guide",
+                "sidebar_position": 11
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Terminology and Definitions",
+                "permalink": "/docs/ai-robot-brain/terminology"
+              },
+              "next": {
+                "title": "Complete Integration Guide",
+                "permalink": "/docs/ai-robot-brain/integration-guide"
+              }
+            },
+            {
+              "id": "ai-robot-brain/index",
+              "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+              "description": "Welcome to Module 3 of the AI Robotics Engineering curriculum! This module focuses on the NVIDIA Isaac ecosystem, which provides a comprehensive platform for developing AI-driven robotic systems. You'll learn how to leverage Isaac Sim for synthetic data generation, Isaac ROS for accelerated perception and navigation, and Nav2 for humanoid-specific path planning.",
+              "source": "@site/docs/ai-robot-brain/index.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/",
+              "permalink": "/docs/ai-robot-brain/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Sensor Simulation & Validation",
+                "permalink": "/docs/digital-twin-sim/sensor-simulation-validation"
+              },
+              "next": {
+                "title": "Introduction to NVIDIA Isaac Sim",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/introduction"
+              }
+            },
+            {
+              "id": "ai-robot-brain/integration-guide",
+              "title": "Complete Integration Guide",
+              "description": "This comprehensive guide brings together all three chapters of the AI-Robot Brain module, showing how Isaac Sim, Isaac ROS, and Nav2 work together to create a complete AI-driven navigation system for humanoid robots.",
+              "source": "@site/docs/ai-robot-brain/integration-guide.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/integration-guide",
+              "permalink": "/docs/ai-robot-brain/integration-guide",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/integration-guide.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "title": "Complete Integration Guide",
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Cross-References and Integration Guide",
+                "permalink": "/docs/ai-robot-brain/cross-references"
+              },
+              "next": {
+                "title": "Learning Objectives and Key Takeaways",
+                "permalink": "/docs/ai-robot-brain/learning-objectives"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/configuration-examples",
+              "title": "Isaac ROS Configuration Examples and Best Practices",
+              "description": "This guide provides practical configuration examples and best practices for optimizing Isaac ROS perception and navigation systems for humanoid robotics applications. These examples will help you achieve optimal performance and reliability.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/configuration-examples.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros",
+              "slug": "/ai-robot-brain/isaac-ros/configuration-examples",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/configuration-examples",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/configuration-examples.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Isaac ROS Configuration Examples and Best Practices",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS VSLAM and Navigation",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/vslam-navigation"
+              },
+              "next": {
+                "title": "Isaac ROS Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/troubleshooting"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/perception-overview",
+              "title": "Isaac ROS Perception Overview",
+              "description": "Isaac ROS is a collection of hardware-accelerated perception and navigation packages designed specifically for robotics applications. Built on top of ROS2, Isaac ROS leverages NVIDIA's GPU computing capabilities to provide high-performance perception algorithms essential for humanoid robotics.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/perception-overview.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros",
+              "slug": "/ai-robot-brain/isaac-ros/perception-overview",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/perception-overview",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/perception-overview.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Isaac ROS Perception Overview",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Generating Synthetic Training Data",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data"
+              },
+              "next": {
+                "title": "Isaac ROS VSLAM and Navigation",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/vslam-navigation"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/troubleshooting",
+              "title": "Isaac ROS Troubleshooting Guide",
+              "description": "This guide provides solutions to common issues encountered when working with Isaac ROS for humanoid robotics applications. Use this guide to diagnose and resolve problems with perception, navigation, and system integration.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/troubleshooting.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros",
+              "slug": "/ai-robot-brain/isaac-ros/troubleshooting",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/troubleshooting",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/troubleshooting.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Isaac ROS Troubleshooting Guide",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS Configuration Examples and Best Practices",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/configuration-examples"
+              },
+              "next": {
+                "title": "Isaac ROS Perception Pipeline Tutorial",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/tutorials/perception-pipeline",
+              "title": "Isaac ROS Perception Pipeline Tutorial",
+              "description": "This tutorial will guide you through implementing a complete perception pipeline using Isaac ROS for humanoid robots. You'll learn how to set up stereo vision, object detection, and integrate multiple perception components.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros/tutorials",
+              "slug": "/ai-robot-brain/isaac-ros/tutorials/perception-pipeline",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Isaac ROS Perception Pipeline Tutorial",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/troubleshooting"
+              },
+              "next": {
+                "title": "Isaac ROS VSLAM Implementation Tutorial",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+              "title": "Isaac ROS VSLAM Implementation Tutorial",
+              "description": "This tutorial will guide you through implementing and configuring Visual SLAM using Isaac ROS specifically for humanoid robot navigation. You'll learn how to set up visual-inertial SLAM, optimize parameters for humanoid applications, and integrate with navigation systems.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros/tutorials",
+              "slug": "/ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Isaac ROS VSLAM Implementation Tutorial",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS Perception Pipeline Tutorial",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline"
+              },
+              "next": {
+                "title": "Nav2 Path Planning for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/vslam-navigation",
+              "title": "Isaac ROS VSLAM and Navigation",
+              "description": "Visual Simultaneous Localization and Mapping (VSLAM) is a critical capability for autonomous humanoid robots. Isaac ROS provides hardware-accelerated VSLAM implementations that enable real-time localization and mapping using visual sensors, essential for humanoid navigation in dynamic environments.",
+              "source": "@site/docs/ai-robot-brain/isaac-ros/vslam-navigation.md",
+              "sourceDirName": "ai-robot-brain/isaac-ros",
+              "slug": "/ai-robot-brain/isaac-ros/vslam-navigation",
+              "permalink": "/docs/ai-robot-brain/isaac-ros/vslam-navigation",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/vslam-navigation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Isaac ROS VSLAM and Navigation",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS Perception Overview",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/perception-overview"
+              },
+              "next": {
+                "title": "Isaac ROS Configuration Examples and Best Practices",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/configuration-examples"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/configuration-examples",
+              "title": "Isaac Sim Configuration Examples and Best Practices",
+              "description": "This guide provides practical configuration examples and best practices for optimizing Isaac Sim for humanoid robotics applications. These examples will help you create efficient and realistic simulation environments.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/configuration-examples.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim",
+              "slug": "/ai-robot-brain/isaac-sim/configuration-examples",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/configuration-examples",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/configuration-examples.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Isaac Sim Configuration Examples and Best Practices",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Synthetic Data Generation with Isaac Sim",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/synthetic-data"
+              },
+              "next": {
+                "title": "Isaac Sim Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/troubleshooting"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/introduction",
+              "title": "Introduction to NVIDIA Isaac Sim",
+              "description": "NVIDIA Isaac Sim is a powerful robotics simulation environment built on NVIDIA's Omniverse platform. It provides photorealistic rendering capabilities and physics simulation for creating synthetic data to train AI models for robotics applications, particularly humanoid robots.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/introduction.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim",
+              "slug": "/ai-robot-brain/isaac-sim/introduction",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/introduction",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/introduction.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction to NVIDIA Isaac Sim",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+                "permalink": "/docs/ai-robot-brain/"
+              },
+              "next": {
+                "title": "Synthetic Data Generation with Isaac Sim",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/synthetic-data"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/synthetic-data",
+              "title": "Synthetic Data Generation with Isaac Sim",
+              "description": "Synthetic data generation is a critical component of modern AI development for robotics. Isaac Sim enables the creation of diverse, labeled datasets that can be used to train perception models for humanoid robots without the need for expensive and time-consuming real-world data collection.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/synthetic-data.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim",
+              "slug": "/ai-robot-brain/isaac-sim/synthetic-data",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/synthetic-data",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/synthetic-data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Synthetic Data Generation with Isaac Sim",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction to NVIDIA Isaac Sim",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/introduction"
+              },
+              "next": {
+                "title": "Isaac Sim Configuration Examples and Best Practices",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/configuration-examples"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/troubleshooting",
+              "title": "Isaac Sim Troubleshooting Guide",
+              "description": "This guide provides solutions to common issues encountered when working with Isaac Sim for humanoid robotics applications. Use this guide to diagnose and resolve problems with simulation, sensors, performance, and data generation.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/troubleshooting.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim",
+              "slug": "/ai-robot-brain/isaac-sim/troubleshooting",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/troubleshooting",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/troubleshooting.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Isaac Sim Troubleshooting Guide",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac Sim Configuration Examples and Best Practices",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/configuration-examples"
+              },
+              "next": {
+                "title": "Setting Up Isaac Sim Environment",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/tutorials/generate-data",
+              "title": "Generating Synthetic Training Data",
+              "description": "This tutorial will guide you through creating synthetic training data for humanoid robot perception models using Isaac Sim. You'll learn how to set up data recording, configure annotations, and generate diverse datasets.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/tutorials/generate-data.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim/tutorials",
+              "slug": "/ai-robot-brain/isaac-sim/tutorials/generate-data",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/tutorials/generate-data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Generating Synthetic Training Data",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Setting Up Isaac Sim Environment",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment"
+              },
+              "next": {
+                "title": "Isaac ROS Perception Overview",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/perception-overview"
+              }
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/tutorials/setup-environment",
+              "title": "Setting Up Isaac Sim Environment",
+              "description": "This tutorial will guide you through setting up your first Isaac Sim environment for humanoid robotics. You'll learn how to create a basic simulation environment with a humanoid robot model and configure essential sensors.",
+              "source": "@site/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment.md",
+              "sourceDirName": "ai-robot-brain/isaac-sim/tutorials",
+              "slug": "/ai-robot-brain/isaac-sim/tutorials/setup-environment",
+              "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Setting Up Isaac Sim Environment",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac Sim Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/troubleshooting"
+              },
+              "next": {
+                "title": "Generating Synthetic Training Data",
+                "permalink": "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data"
+              }
+            },
+            {
+              "id": "ai-robot-brain/learning-objectives",
+              "title": "Learning Objectives and Key Takeaways",
+              "description": "This document outlines the learning objectives for the AI-Robot Brain (NVIDIA Isaac™) module and key takeaways that students should master upon completion.",
+              "source": "@site/docs/ai-robot-brain/learning-objectives.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/learning-objectives",
+              "permalink": "/docs/ai-robot-brain/learning-objectives",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/learning-objectives.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 13,
+              "frontMatter": {
+                "title": "Learning Objectives and Key Takeaways",
+                "sidebar_position": 13
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Complete Integration Guide",
+                "permalink": "/docs/ai-robot-brain/integration-guide"
+              },
+              "next": {
+                "title": "Assessment Questions",
+                "permalink": "/docs/ai-robot-brain/assessment-questions"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/humanoid-constraints",
+              "title": "Humanoid Robot Kinematic and Balance Constraints",
+              "description": "Humanoid robots have unique kinematic and balance constraints that significantly impact navigation planning and execution. Unlike wheeled robots, humanoid robots must maintain dynamic balance while navigating, which introduces complex constraints that must be considered in Nav2 configuration and path planning.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid",
+              "slug": "/ai-robot-brain/nav2-humanoid/humanoid-constraints",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Humanoid Robot Kinematic and Balance Constraints",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nav2 Path Planning for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning"
+              },
+              "next": {
+                "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/path-planning",
+              "title": "Nav2 Path Planning for Humanoid Robots",
+              "description": "Navigation 2 (Nav2) is the next-generation navigation framework for ROS2, providing advanced path planning and navigation capabilities. When configured for humanoid robots, Nav2 must account for unique kinematic constraints, balance requirements, and social navigation considerations that differ significantly from wheeled robots.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/path-planning.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid",
+              "slug": "/ai-robot-brain/nav2-humanoid/path-planning",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/path-planning.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Nav2 Path Planning for Humanoid Robots",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Isaac ROS VSLAM Implementation Tutorial",
+                "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation"
+              },
+              "next": {
+                "title": "Humanoid Robot Kinematic and Balance Constraints",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/performance-optimization",
+              "title": "Nav2 Performance Optimization for Humanoid Robots",
+              "description": "Performance optimization is crucial for humanoid robot navigation, as these systems have unique computational and real-time requirements. This guide covers techniques to optimize Nav2 for humanoid robots while maintaining safety and stability.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/performance-optimization.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid",
+              "slug": "/ai-robot-brain/nav2-humanoid/performance-optimization",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/performance-optimization",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/performance-optimization.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Nav2 Performance Optimization for Humanoid Robots",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting"
+              },
+              "next": {
+                "title": "Configuring Nav2 for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/troubleshooting",
+              "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+              "description": "This guide provides solutions to common issues encountered when running Navigation 2 (Nav2) with humanoid robots. Humanoid navigation presents unique challenges due to balance requirements, kinematic constraints, and complex dynamics that differ from traditional wheeled robots.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/troubleshooting.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid",
+              "slug": "/ai-robot-brain/nav2-humanoid/troubleshooting",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/troubleshooting.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Humanoid Robot Kinematic and Balance Constraints",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints"
+              },
+              "next": {
+                "title": "Nav2 Performance Optimization for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/performance-optimization"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+              "title": "Humanoid Robot Movement Execution with Nav2",
+              "description": "This tutorial covers the practical aspects of executing navigation commands with Nav2 on humanoid robots. You'll learn how to implement safe movement execution, handle humanoid-specific challenges, and integrate with balance control systems.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid/tutorials",
+              "slug": "/ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Humanoid Robot Movement Execution with Nav2",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Configuring Nav2 for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration"
+              },
+              "next": {
+                "title": "Terminology and Definitions",
+                "permalink": "/docs/ai-robot-brain/terminology"
+              }
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration",
+              "title": "Configuring Nav2 for Humanoid Robots",
+              "description": "This tutorial will guide you through configuring Navigation 2 (Nav2) specifically for humanoid robot navigation. You'll learn how to set up the navigation stack with humanoid-specific parameters, constraints, and behaviors.",
+              "source": "@site/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration.md",
+              "sourceDirName": "ai-robot-brain/nav2-humanoid/tutorials",
+              "slug": "/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration",
+              "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Configuring Nav2 for Humanoid Robots",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nav2 Performance Optimization for Humanoid Robots",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/performance-optimization"
+              },
+              "next": {
+                "title": "Humanoid Robot Movement Execution with Nav2",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution"
+              }
+            },
+            {
+              "id": "ai-robot-brain/quick-reference",
+              "title": "Quick Reference Guides",
+              "description": "This section provides quick reference materials for common Isaac Sim, Isaac ROS, and Nav2 operations and commands for humanoid robotics applications.",
+              "source": "@site/docs/ai-robot-brain/quick-reference.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/quick-reference",
+              "permalink": "/docs/ai-robot-brain/quick-reference",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/quick-reference.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 15,
+              "frontMatter": {
+                "title": "Quick Reference Guides",
+                "sidebar_position": 15
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Assessment Questions",
+                "permalink": "/docs/ai-robot-brain/assessment-questions"
+              },
+              "next": {
+                "title": "Module 4: Vision-Language-Action (VLA)",
+                "permalink": "/docs/vla-integration/"
+              }
+            },
+            {
+              "id": "ai-robot-brain/terminology",
+              "title": "Terminology and Definitions",
+              "description": "This document standardizes terminology used throughout the AI-Robot Brain (NVIDIA Isaac™) module to ensure consistency and clarity across all chapters.",
+              "source": "@site/docs/ai-robot-brain/terminology.md",
+              "sourceDirName": "ai-robot-brain",
+              "slug": "/ai-robot-brain/terminology",
+              "permalink": "/docs/ai-robot-brain/terminology",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/terminology.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "title": "Terminology and Definitions",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Humanoid Robot Movement Execution with Nav2",
+                "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution"
+              },
+              "next": {
+                "title": "Cross-References and Integration Guide",
+                "permalink": "/docs/ai-robot-brain/cross-references"
+              }
+            },
+            {
+              "id": "digital-twin-sim/digital-twins-hri-unity",
+              "title": "Digital Twins and HRI in Unity",
+              "description": "Creating high-fidelity digital twins and Human-Robot Interaction scenarios in Unity",
+              "source": "@site/docs/2-digital-twin-sim/digital-twins-hri-unity.md",
+              "sourceDirName": "2-digital-twin-sim",
+              "slug": "/digital-twin-sim/digital-twins-hri-unity",
+              "permalink": "/docs/digital-twin-sim/digital-twins-hri-unity",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/digital-twins-hri-unity.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Digital Twins and HRI in Unity",
+                "sidebar_label": "Digital Twins and HRI in Unity",
+                "description": "Creating high-fidelity digital twins and Human-Robot Interaction scenarios in Unity"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Physics Simulation with Gazebo",
+                "permalink": "/docs/digital-twin-sim/physics-simulation-gazebo"
+              },
+              "next": {
+                "title": "Sensor Simulation & Validation",
+                "permalink": "/docs/digital-twin-sim/sensor-simulation-validation"
+              }
+            },
+            {
+              "id": "digital-twin-sim/intro",
+              "title": "Introduction to Digital Twin Simulation",
+              "description": "Introduction to digital twin simulation with Gazebo and Unity for humanoid robotics",
+              "source": "@site/docs/2-digital-twin-sim/intro.md",
+              "sourceDirName": "2-digital-twin-sim",
+              "slug": "/digital-twin-sim/intro",
+              "permalink": "/docs/digital-twin-sim/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction to Digital Twin Simulation",
+                "sidebar_label": "Introduction",
+                "description": "Introduction to digital twin simulation with Gazebo and Unity for humanoid robotics"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Robot Structure with URDF",
+                "permalink": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf"
+              },
+              "next": {
+                "title": "Physics Simulation with Gazebo",
+                "permalink": "/docs/digital-twin-sim/physics-simulation-gazebo"
+              }
+            },
+            {
+              "id": "digital-twin-sim/physics-simulation-gazebo",
+              "title": "Physics Simulation with Gazebo",
+              "description": "Understanding physics-based simulation with Gazebo for humanoid robotics",
+              "source": "@site/docs/2-digital-twin-sim/physics-simulation-gazebo.md",
+              "sourceDirName": "2-digital-twin-sim",
+              "slug": "/digital-twin-sim/physics-simulation-gazebo",
+              "permalink": "/docs/digital-twin-sim/physics-simulation-gazebo",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/physics-simulation-gazebo.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Physics Simulation with Gazebo",
+                "sidebar_label": "Physics Simulation with Gazebo",
+                "description": "Understanding physics-based simulation with Gazebo for humanoid robotics"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/digital-twin-sim/intro"
+              },
+              "next": {
+                "title": "Digital Twins and HRI in Unity",
+                "permalink": "/docs/digital-twin-sim/digital-twins-hri-unity"
+              }
+            },
+            {
+              "id": "digital-twin-sim/sensor-simulation-validation",
+              "title": "Sensor Simulation & Validation",
+              "description": "Simulating sensors (lidar, cameras, IMU) in Gazebo and Unity with validation techniques",
+              "source": "@site/docs/2-digital-twin-sim/sensor-simulation-validation.md",
+              "sourceDirName": "2-digital-twin-sim",
+              "slug": "/digital-twin-sim/sensor-simulation-validation",
+              "permalink": "/docs/digital-twin-sim/sensor-simulation-validation",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/sensor-simulation-validation.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Sensor Simulation & Validation",
+                "sidebar_label": "Sensor Simulation & Validation",
+                "description": "Simulating sensors (lidar, cameras, IMU) in Gazebo and Unity with validation techniques"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Digital Twins and HRI in Unity",
+                "permalink": "/docs/digital-twin-sim/digital-twins-hri-unity"
+              },
+              "next": {
+                "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+                "permalink": "/docs/ai-robot-brain/"
+              }
+            },
+            {
+              "id": "intro",
+              "title": "Introduction",
+              "description": "Introduction to the AI Book on ROS 2 Fundamentals for Humanoid Robotics",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction",
+                "sidebar_label": "Introduction",
+                "description": "Introduction to the AI Book on ROS 2 Fundamentals for Humanoid Robotics"
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Introduction to ROS 2",
+                "permalink": "/docs/ros2-humanoid-fundamentals/intro-to-ros2"
+              }
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/communication-model",
+              "title": "ROS 2 Communication Model",
+              "description": "Understanding nodes, topics, services, and basic reply-based controller flow for humanoid robots",
+              "source": "@site/docs/1-ros2-humanoid-fundamentals/communication-model.md",
+              "sourceDirName": "1-ros2-humanoid-fundamentals",
+              "slug": "/ros2-humanoid-fundamentals/communication-model",
+              "permalink": "/docs/ros2-humanoid-fundamentals/communication-model",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1-ros2-humanoid-fundamentals/communication-model.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "ROS 2 Communication Model",
+                "sidebar_label": "Communication Model",
+                "description": "Understanding nodes, topics, services, and basic reply-based controller flow for humanoid robots"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction to ROS 2",
+                "permalink": "/docs/ros2-humanoid-fundamentals/intro-to-ros2"
+              },
+              "next": {
+                "title": "Robot Structure with URDF",
+                "permalink": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf"
+              }
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/intro-to-ros2",
+              "title": "Introduction to ROS 2 for Physical AI",
+              "description": "Understanding what ROS 2 is and why it matters for humanoid robotics",
+              "source": "@site/docs/1-ros2-humanoid-fundamentals/intro-to-ros2.md",
+              "sourceDirName": "1-ros2-humanoid-fundamentals",
+              "slug": "/ros2-humanoid-fundamentals/intro-to-ros2",
+              "permalink": "/docs/ros2-humanoid-fundamentals/intro-to-ros2",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1-ros2-humanoid-fundamentals/intro-to-ros2.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction to ROS 2 for Physical AI",
+                "sidebar_label": "Introduction to ROS 2",
+                "description": "Understanding what ROS 2 is and why it matters for humanoid robotics"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Communication Model",
+                "permalink": "/docs/ros2-humanoid-fundamentals/communication-model"
+              }
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/robot-structure-urdf",
+              "title": "Robot Structure with URDF",
+              "description": "Understanding URDF for humanoid robots and simulation readiness",
+              "source": "@site/docs/1-ros2-humanoid-fundamentals/robot-structure-urdf.md",
+              "sourceDirName": "1-ros2-humanoid-fundamentals",
+              "slug": "/ros2-humanoid-fundamentals/robot-structure-urdf",
+              "permalink": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1-ros2-humanoid-fundamentals/robot-structure-urdf.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Robot Structure with URDF",
+                "sidebar_label": "Robot Structure with URDF",
+                "description": "Understanding URDF for humanoid robots and simulation readiness"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Communication Model",
+                "permalink": "/docs/ros2-humanoid-fundamentals/communication-model"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/digital-twin-sim/intro"
+              }
+            },
+            {
+              "id": "vla-integration/capstone-autonomous-humanoid",
+              "title": "Chapter 3: Capstone - Autonomous Humanoid",
+              "description": "Overview",
+              "source": "@site/docs/vla-integration/capstone-autonomous-humanoid.md",
+              "sourceDirName": "vla-integration",
+              "slug": "/vla-integration/capstone-autonomous-humanoid",
+              "permalink": "/docs/vla-integration/capstone-autonomous-humanoid",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/capstone-autonomous-humanoid.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Chapter 3: Capstone - Autonomous Humanoid",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 2: LLM-Based Cognitive Planning",
+                "permalink": "/docs/vla-integration/llm-cognitive-planning"
+              },
+              "next": {
+                "title": "Evaluation and Testing Framework",
+                "permalink": "/docs/vla-integration/evaluation-framework"
+              }
+            },
+            {
+              "id": "vla-integration/evaluation-framework",
+              "title": "Evaluation and Testing Framework",
+              "description": "This chapter covers the evaluation and testing methodologies for the Vision-Language-Action (VLA) system. You'll learn how to assess system performance, validate safety measures, and ensure the autonomous humanoid robot operates reliably in real-world scenarios.",
+              "source": "@site/docs/vla-integration/evaluation-framework.md",
+              "sourceDirName": "vla-integration",
+              "slug": "/vla-integration/evaluation-framework",
+              "permalink": "/docs/vla-integration/evaluation-framework",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/evaluation-framework.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Evaluation and Testing Framework",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 3: Capstone - Autonomous Humanoid",
+                "permalink": "/docs/vla-integration/capstone-autonomous-humanoid"
+              }
+            },
+            {
+              "id": "vla-integration/index",
+              "title": "Module 4: Vision-Language-Action (VLA)",
+              "description": "Welcome to Module 4 of the AI Robotics Engineering curriculum! This module focuses on connecting language, vision, and action for autonomous humanoid behavior. You'll learn how to build systems that understand natural language commands, perceive the environment through vision systems, and execute appropriate actions using robotic platforms.",
+              "source": "@site/docs/vla-integration/index.md",
+              "sourceDirName": "vla-integration",
+              "slug": "/vla-integration/",
+              "permalink": "/docs/vla-integration/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Module 4: Vision-Language-Action (VLA)",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Quick Reference Guides",
+                "permalink": "/docs/ai-robot-brain/quick-reference"
+              },
+              "next": {
+                "title": "Chapter 1: Voice-to-Action",
+                "permalink": "/docs/vla-integration/voice-to-action/"
+              }
+            },
+            {
+              "id": "vla-integration/llm-cognitive-planning",
+              "title": "Chapter 2: LLM-Based Cognitive Planning",
+              "description": "Overview",
+              "source": "@site/docs/vla-integration/llm-cognitive-planning.md",
+              "sourceDirName": "vla-integration",
+              "slug": "/vla-integration/llm-cognitive-planning",
+              "permalink": "/docs/vla-integration/llm-cognitive-planning",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/llm-cognitive-planning.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Chapter 2: LLM-Based Cognitive Planning",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Intent Extraction for Robots",
+                "permalink": "/docs/vla-integration/voice-to-action/intent-extraction"
+              },
+              "next": {
+                "title": "Chapter 3: Capstone - Autonomous Humanoid",
+                "permalink": "/docs/vla-integration/capstone-autonomous-humanoid"
+              }
+            },
+            {
+              "id": "vla-integration/spec",
+              "title": "Module 4: Vision-Language-Action (VLA) Specification",
+              "description": "Overview",
+              "source": "@site/docs/vla-integration/spec.md",
+              "sourceDirName": "vla-integration",
+              "slug": "/vla-integration/spec",
+              "permalink": "/docs/vla-integration/spec",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/spec.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Module 4: Vision-Language-Action (VLA) Specification",
+                "sidebar_position": 1
+              }
+            },
+            {
+              "id": "vla-integration/voice-to-action/index",
+              "title": "Chapter 1: Voice-to-Action",
+              "description": "This chapter introduces the fundamentals of speech recognition for robotics applications. You'll learn how to implement speech-to-text systems using Whisper and extract robot-appropriate intents from spoken commands.",
+              "source": "@site/docs/vla-integration/voice-to-action/index.md",
+              "sourceDirName": "vla-integration/voice-to-action",
+              "slug": "/vla-integration/voice-to-action/",
+              "permalink": "/docs/vla-integration/voice-to-action/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Chapter 1: Voice-to-Action",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 4: Vision-Language-Action (VLA)",
+                "permalink": "/docs/vla-integration/"
+              },
+              "next": {
+                "title": "Speech-to-Text with Whisper",
+                "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation"
+              }
+            },
+            {
+              "id": "vla-integration/voice-to-action/intent-extraction",
+              "title": "Intent Extraction for Robots",
+              "description": "This section covers how to extract robot-appropriate intents from natural language commands. We'll explore techniques for understanding what the user wants the robot to do based on spoken or written input.",
+              "source": "@site/docs/vla-integration/voice-to-action/intent-extraction.md",
+              "sourceDirName": "vla-integration/voice-to-action",
+              "slug": "/vla-integration/voice-to-action/intent-extraction",
+              "permalink": "/docs/vla-integration/voice-to-action/intent-extraction",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/intent-extraction.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Intent Extraction for Robots",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Speech-to-Text with Whisper",
+                "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation"
+              },
+              "next": {
+                "title": "Chapter 2: LLM-Based Cognitive Planning",
+                "permalink": "/docs/vla-integration/llm-cognitive-planning"
+              }
+            },
+            {
+              "id": "vla-integration/voice-to-action/whisper-implementation",
+              "title": "Speech-to-Text with Whisper",
+              "description": "This section covers the implementation of Whisper-based speech recognition for robotic applications. We'll explore how to deploy Whisper models, handle real-time audio input, and optimize for robotic command recognition.",
+              "source": "@site/docs/vla-integration/voice-to-action/whisper-implementation.md",
+              "sourceDirName": "vla-integration/voice-to-action",
+              "slug": "/vla-integration/voice-to-action/whisper-implementation",
+              "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/whisper-implementation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Speech-to-Text with Whisper",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 1: Voice-to-Action",
+                "permalink": "/docs/vla-integration/voice-to-action/"
+              },
+              "next": {
+                "title": "Intent Extraction for Robots",
+                "permalink": "/docs/vla-integration/voice-to-action/intent-extraction"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Module 1: The Robotic Nervous System (ROS 2)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ros2-humanoid-fundamentals/intro-to-ros2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ros2-humanoid-fundamentals/communication-model"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "ros2-humanoid-fundamentals/robot-structure-urdf"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 2: The Digital Twin (Gazebo & Unity)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "digital-twin-sim/intro"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "digital-twin-sim/physics-simulation-gazebo"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "digital-twin-sim/digital-twins-hri-unity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "digital-twin-sim/sensor-simulation-validation"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ai-robot-brain/index"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Isaac Sim: Synthetic Data Generation",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-sim/introduction"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-sim/synthetic-data"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-sim/configuration-examples"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-sim/troubleshooting"
+                      },
+                      {
+                        "type": "category",
+                        "label": "Tutorials",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/isaac-sim/tutorials/setup-environment"
+                          },
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/isaac-sim/tutorials/generate-data"
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Isaac ROS: Perception & Navigation",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-ros/perception-overview"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-ros/vslam-navigation"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-ros/configuration-examples"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/isaac-ros/troubleshooting"
+                      },
+                      {
+                        "type": "category",
+                        "label": "Tutorials",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/isaac-ros/tutorials/perception-pipeline"
+                          },
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/isaac-ros/tutorials/vslam-implementation"
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Nav2: Humanoid Path Planning",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/nav2-humanoid/path-planning"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/nav2-humanoid/humanoid-constraints"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/nav2-humanoid/troubleshooting"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/nav2-humanoid/performance-optimization"
+                      },
+                      {
+                        "type": "category",
+                        "label": "Tutorials",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration"
+                          },
+                          {
+                            "type": "doc",
+                            "id": "ai-robot-brain/nav2-humanoid/tutorials/movement-execution"
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Reference Materials",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/terminology"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/cross-references"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/integration-guide"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/learning-objectives"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/assessment-questions"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "ai-robot-brain/quick-reference"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 4: Vision-Language-Action (VLA)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "vla-integration/index"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Voice-to-Action",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/voice-to-action/index"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/voice-to-action/whisper-implementation"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/voice-to-action/intent-extraction"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "LLM-Based Cognitive Planning",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/llm-cognitive-planning"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Capstone: Autonomous Humanoid",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/capstone-autonomous-humanoid"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Evaluation and Testing Framework",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "vla-integration/evaluation-framework"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

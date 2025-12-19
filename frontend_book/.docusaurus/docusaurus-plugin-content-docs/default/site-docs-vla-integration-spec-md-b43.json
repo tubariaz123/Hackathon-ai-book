@@ -1,0 +1,19 @@
+{
+  "id": "vla-integration/spec",
+  "title": "Module 4: Vision-Language-Action (VLA) Specification",
+  "description": "Overview",
+  "source": "@site/docs/vla-integration/spec.md",
+  "sourceDirName": "vla-integration",
+  "slug": "/vla-integration/spec",
+  "permalink": "/docs/vla-integration/spec",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/spec.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Module 4: Vision-Language-Action (VLA) Specification",
+    "sidebar_position": 1
+  }
+}

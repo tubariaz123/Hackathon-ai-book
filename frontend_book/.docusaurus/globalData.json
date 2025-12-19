@@ -1,0 +1,232 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "ai-robot-brain/assessment-questions",
+              "path": "/docs/ai-robot-brain/assessment-questions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/cross-references",
+              "path": "/docs/ai-robot-brain/cross-references",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/index",
+              "path": "/docs/ai-robot-brain/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/integration-guide",
+              "path": "/docs/ai-robot-brain/integration-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/configuration-examples",
+              "path": "/docs/ai-robot-brain/isaac-ros/configuration-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/perception-overview",
+              "path": "/docs/ai-robot-brain/isaac-ros/perception-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/troubleshooting",
+              "path": "/docs/ai-robot-brain/isaac-ros/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/tutorials/perception-pipeline",
+              "path": "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+              "path": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-ros/vslam-navigation",
+              "path": "/docs/ai-robot-brain/isaac-ros/vslam-navigation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/configuration-examples",
+              "path": "/docs/ai-robot-brain/isaac-sim/configuration-examples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/introduction",
+              "path": "/docs/ai-robot-brain/isaac-sim/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/synthetic-data",
+              "path": "/docs/ai-robot-brain/isaac-sim/synthetic-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/troubleshooting",
+              "path": "/docs/ai-robot-brain/isaac-sim/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/tutorials/generate-data",
+              "path": "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/isaac-sim/tutorials/setup-environment",
+              "path": "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/learning-objectives",
+              "path": "/docs/ai-robot-brain/learning-objectives",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/humanoid-constraints",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/path-planning",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/path-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/performance-optimization",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/performance-optimization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/troubleshooting",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration",
+              "path": "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/quick-reference",
+              "path": "/docs/ai-robot-brain/quick-reference",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-robot-brain/terminology",
+              "path": "/docs/ai-robot-brain/terminology",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin-sim/digital-twins-hri-unity",
+              "path": "/docs/digital-twin-sim/digital-twins-hri-unity",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin-sim/intro",
+              "path": "/docs/digital-twin-sim/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin-sim/physics-simulation-gazebo",
+              "path": "/docs/digital-twin-sim/physics-simulation-gazebo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin-sim/sensor-simulation-validation",
+              "path": "/docs/digital-twin-sim/sensor-simulation-validation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/communication-model",
+              "path": "/docs/ros2-humanoid-fundamentals/communication-model",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/intro-to-ros2",
+              "path": "/docs/ros2-humanoid-fundamentals/intro-to-ros2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros2-humanoid-fundamentals/robot-structure-urdf",
+              "path": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/capstone-autonomous-humanoid",
+              "path": "/docs/vla-integration/capstone-autonomous-humanoid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/evaluation-framework",
+              "path": "/docs/vla-integration/evaluation-framework",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/index",
+              "path": "/docs/vla-integration/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/llm-cognitive-planning",
+              "path": "/docs/vla-integration/llm-cognitive-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/spec",
+              "path": "/docs/vla-integration/spec"
+            },
+            {
+              "id": "vla-integration/voice-to-action/index",
+              "path": "/docs/vla-integration/voice-to-action/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/voice-to-action/intent-extraction",
+              "path": "/docs/vla-integration/voice-to-action/intent-extraction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-integration/voice-to-action/whisper-implementation",
+              "path": "/docs/vla-integration/voice-to-action/whisper-implementation",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

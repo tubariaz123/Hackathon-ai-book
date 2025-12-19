@@ -1,0 +1,28 @@
+{
+  "id": "vla-integration/voice-to-action/index",
+  "title": "Chapter 1: Voice-to-Action",
+  "description": "This chapter introduces the fundamentals of speech recognition for robotics applications. You'll learn how to implement speech-to-text systems using Whisper and extract robot-appropriate intents from spoken commands.",
+  "source": "@site/docs/vla-integration/voice-to-action/index.md",
+  "sourceDirName": "vla-integration/voice-to-action",
+  "slug": "/vla-integration/voice-to-action/",
+  "permalink": "/docs/vla-integration/voice-to-action/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Chapter 1: Voice-to-Action",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 4: Vision-Language-Action (VLA)",
+    "permalink": "/docs/vla-integration/"
+  },
+  "next": {
+    "title": "Speech-to-Text with Whisper",
+    "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation"
+  }
+}

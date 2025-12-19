@@ -1,0 +1,28 @@
+{
+  "id": "vla-integration/voice-to-action/intent-extraction",
+  "title": "Intent Extraction for Robots",
+  "description": "This section covers how to extract robot-appropriate intents from natural language commands. We'll explore techniques for understanding what the user wants the robot to do based on spoken or written input.",
+  "source": "@site/docs/vla-integration/voice-to-action/intent-extraction.md",
+  "sourceDirName": "vla-integration/voice-to-action",
+  "slug": "/vla-integration/voice-to-action/intent-extraction",
+  "permalink": "/docs/vla-integration/voice-to-action/intent-extraction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/voice-to-action/intent-extraction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Intent Extraction for Robots",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Speech-to-Text with Whisper",
+    "permalink": "/docs/vla-integration/voice-to-action/whisper-implementation"
+  },
+  "next": {
+    "title": "Chapter 2: LLM-Based Cognitive Planning",
+    "permalink": "/docs/vla-integration/llm-cognitive-planning"
+  }
+}

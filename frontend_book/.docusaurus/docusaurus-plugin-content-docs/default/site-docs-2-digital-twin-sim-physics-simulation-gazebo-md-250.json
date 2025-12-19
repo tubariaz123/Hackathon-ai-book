@@ -1,0 +1,28 @@
+{
+  "id": "digital-twin-sim/physics-simulation-gazebo",
+  "title": "Physics Simulation with Gazebo",
+  "description": "Understanding physics-based simulation with Gazebo for humanoid robotics",
+  "source": "@site/docs/2-digital-twin-sim/physics-simulation-gazebo.md",
+  "sourceDirName": "2-digital-twin-sim",
+  "slug": "/digital-twin-sim/physics-simulation-gazebo",
+  "permalink": "/docs/digital-twin-sim/physics-simulation-gazebo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/physics-simulation-gazebo.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Physics Simulation with Gazebo",
+    "sidebar_label": "Physics Simulation with Gazebo",
+    "description": "Understanding physics-based simulation with Gazebo for humanoid robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/digital-twin-sim/intro"
+  },
+  "next": {
+    "title": "Digital Twins and HRI in Unity",
+    "permalink": "/docs/digital-twin-sim/digital-twins-hri-unity"
+  }
+}

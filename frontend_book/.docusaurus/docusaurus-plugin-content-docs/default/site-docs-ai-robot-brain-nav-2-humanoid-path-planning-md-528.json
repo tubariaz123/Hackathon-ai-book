@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/nav2-humanoid/path-planning",
+  "title": "Nav2 Path Planning for Humanoid Robots",
+  "description": "Navigation 2 (Nav2) is the next-generation navigation framework for ROS2, providing advanced path planning and navigation capabilities. When configured for humanoid robots, Nav2 must account for unique kinematic constraints, balance requirements, and social navigation considerations that differ significantly from wheeled robots.",
+  "source": "@site/docs/ai-robot-brain/nav2-humanoid/path-planning.md",
+  "sourceDirName": "ai-robot-brain/nav2-humanoid",
+  "slug": "/ai-robot-brain/nav2-humanoid/path-planning",
+  "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/path-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Nav2 Path Planning for Humanoid Robots",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac ROS VSLAM Implementation Tutorial",
+    "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation"
+  },
+  "next": {
+    "title": "Humanoid Robot Kinematic and Balance Constraints",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints"
+  }
+}

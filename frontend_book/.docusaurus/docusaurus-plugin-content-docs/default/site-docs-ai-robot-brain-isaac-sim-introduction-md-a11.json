@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/isaac-sim/introduction",
+  "title": "Introduction to NVIDIA Isaac Sim",
+  "description": "NVIDIA Isaac Sim is a powerful robotics simulation environment built on NVIDIA's Omniverse platform. It provides photorealistic rendering capabilities and physics simulation for creating synthetic data to train AI models for robotics applications, particularly humanoid robots.",
+  "source": "@site/docs/ai-robot-brain/isaac-sim/introduction.md",
+  "sourceDirName": "ai-robot-brain/isaac-sim",
+  "slug": "/ai-robot-brain/isaac-sim/introduction",
+  "permalink": "/docs/ai-robot-brain/isaac-sim/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Introduction to NVIDIA Isaac Sim",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/ai-robot-brain/"
+  },
+  "next": {
+    "title": "Synthetic Data Generation with Isaac Sim",
+    "permalink": "/docs/ai-robot-brain/isaac-sim/synthetic-data"
+  }
+}

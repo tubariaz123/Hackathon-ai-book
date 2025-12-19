@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/learning-objectives",
+  "title": "Learning Objectives and Key Takeaways",
+  "description": "This document outlines the learning objectives for the AI-Robot Brain (NVIDIA Isaac™) module and key takeaways that students should master upon completion.",
+  "source": "@site/docs/ai-robot-brain/learning-objectives.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/learning-objectives",
+  "permalink": "/docs/ai-robot-brain/learning-objectives",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/learning-objectives.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "Learning Objectives and Key Takeaways",
+    "sidebar_position": 13
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Complete Integration Guide",
+    "permalink": "/docs/ai-robot-brain/integration-guide"
+  },
+  "next": {
+    "title": "Assessment Questions",
+    "permalink": "/docs/ai-robot-brain/assessment-questions"
+  }
+}

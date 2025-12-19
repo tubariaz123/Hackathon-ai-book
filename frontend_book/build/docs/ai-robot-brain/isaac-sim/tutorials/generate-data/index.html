@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ai-robot-brain/isaac-sim/tutorials/generate-data" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">Generating Synthetic Training Data | AI Book - Robotics Simulation and Control</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/ai-robot-brain/isaac-sim/tutorials/generate-data"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Generating Synthetic Training Data | AI Book - Robotics Simulation and Control"><meta data-rh="true" name="description" content="This tutorial will guide you through creating synthetic training data for humanoid robot perception models using Isaac Sim. You&#x27;ll learn how to set up data recording, configure annotations, and generate diverse datasets."><meta data-rh="true" property="og:description" content="This tutorial will guide you through creating synthetic training data for humanoid robot perception models using Isaac Sim. You&#x27;ll learn how to set up data recording, configure annotations, and generate diverse datasets."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/ai-robot-brain/isaac-sim/tutorials/generate-data"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/ai-robot-brain/isaac-sim/tutorials/generate-data" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/ai-robot-brain/isaac-sim/tutorials/generate-data" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.5d23890d.css">
+<script src="/assets/js/runtime~main.a3c2f2d3.js" defer="defer"></script>
+<script src="/assets/js/main.c5c990df.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="AI Book Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="AI Book Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Book - Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Modules</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/ros2-humanoid-fundamentals/intro-to-ros2">Module 1: The Robotic Nervous System (ROS 2)</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/digital-twin-sim/intro">Module 2: The Digital Twin (Gazebo &amp; Unity)</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/docs/ai-robot-brain/">Module 3: The AI-Robot Brain (NVIDIA Isaac™)</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/">Module 3: The AI-Robot Brain (NVIDIA Isaac)</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/introduction">Isaac Sim: Synthetic Data Generation</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/introduction">Introduction to NVIDIA Isaac Sim</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/synthetic-data">Synthetic Data Generation with Isaac Sim</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/configuration-examples">Isaac Sim Configuration Examples and Best Practices</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/troubleshooting">Isaac Sim Troubleshooting Guide</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment">Tutorials</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment">Setting Up Isaac Sim Environment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/ai-robot-brain/isaac-sim/tutorials/generate-data">Generating Synthetic Training Data</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" tabindex="0" href="/docs/ai-robot-brain/isaac-ros/perception-overview">Isaac ROS: Perception &amp; Navigation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" tabindex="0" href="/docs/ai-robot-brain/nav2-humanoid/path-planning">Nav2: Humanoid Path Planning</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" tabindex="0" href="/docs/ai-robot-brain/terminology">Reference Materials</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Module 3: The AI-Robot Brain (NVIDIA Isaac™)</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Isaac Sim: Synthetic Data Generation</span><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Tutorials</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Generating Synthetic Training Data</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Generating Synthetic Training Data</h1>
+<p>This tutorial will guide you through creating synthetic training data for humanoid robot perception models using Isaac Sim. You&#x27;ll learn how to set up data recording, configure annotations, and generate diverse datasets.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites"> ​</a></h2>
+<p>Before starting this tutorial, you should have:</p>
+<ul>
+<li>Completed the Isaac Sim environment setup tutorial</li>
+<li>A basic scene with a humanoid robot and sensors</li>
+<li>Understanding of synthetic data concepts</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-enable-synthetic-data-extension">Step 1: Enable Synthetic Data Extension<a href="#step-1-enable-synthetic-data-extension" class="hash-link" aria-label="Direct link to Step 1: Enable Synthetic Data Extension" title="Direct link to Step 1: Enable Synthetic Data Extension">​</a></h2>
+<ol>
+<li>In Isaac Sim, go to <strong>Window</strong> → <strong>Extensions</strong></li>
+<li>Search for &quot;Synthetic Data&quot; in the extensions list</li>
+<li>Enable the <strong>Isaac/Isaac Synthetic Data/Isaac Synthetic Data</strong> extension</li>
+<li>The Synthetic Data panel should now appear in your interface</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-configure-camera-sensors-for-data-generation">Step 2: Configure Camera Sensors for Data Generation<a href="#step-2-configure-camera-sensors-for-data-generation" class="hash-link" aria-label="Direct link to Step 2: Configure Camera Sensors for Data Generation" title="Direct link to Step 2: Configure Camera Sensors for Data Generation">​</a></h2>
+<ol>
+<li>Select your RGB camera in the scene</li>
+<li>In the <strong>Property</strong> panel, under <strong>Isaac Sensors</strong>, ensure <strong>Isaac Camera Sensors</strong> is enabled</li>
+<li>Expand the camera settings and configure:<!-- -->
+<ul>
+<li><strong>Resolution</strong>: Set to your desired output size (e.g., 640x480)</li>
+<li><strong>Sensor Type</strong>: RGB, Depth, or both</li>
+<li><strong>Sensor Position</strong>: Verify mounting position on the robot</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-set-up-annotation-generation">Step 3: Set Up Annotation Generation<a href="#step-3-set-up-annotation-generation" class="hash-link" aria-label="Direct link to Step 3: Set Up Annotation Generation" title="Direct link to Step 3: Set Up Annotation Generation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="semantic-segmentation">Semantic Segmentation<a href="#semantic-segmentation" class="hash-link" aria-label="Direct link to Semantic Segmentation" title="Direct link to Semantic Segmentation">​</a></h3>
+<ol>
+<li>In the Synthetic Data panel, find your camera</li>
+<li>Expand the <strong>Annotation</strong> section</li>
+<li>Enable <strong>Semantic Segmentation</strong></li>
+<li>Assign semantic labels to objects in your scene:<!-- -->
+<ul>
+<li>Select each object in the scene</li>
+<li>In the <strong>Property</strong> panel, expand <strong>Semantic Labels</strong></li>
+<li>Assign appropriate labels (e.g., &quot;robot&quot;, &quot;human&quot;, &quot;obstacle&quot;, &quot;ground&quot;)</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bounding-boxes">Bounding Boxes<a href="#bounding-boxes" class="hash-link" aria-label="Direct link to Bounding Boxes" title="Direct link to Bounding Boxes">​</a></h3>
+<ol>
+<li>In the Synthetic Data panel, enable <strong>Bounding Box 2D</strong> annotation</li>
+<li>This will generate 2D bounding boxes around labeled objects</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="instance-segmentation">Instance Segmentation<a href="#instance-segmentation" class="hash-link" aria-label="Direct link to Instance Segmentation" title="Direct link to Instance Segmentation">​</a></h3>
+<ol>
+<li>Enable <strong>Instance Segmentation</strong> for per-instance masks</li>
+<li>Each unique object instance will get its own mask</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-configure-domain-randomization">Step 4: Configure Domain Randomization<a href="#step-4-configure-domain-randomization" class="hash-link" aria-label="Direct link to Step 4: Configure Domain Randomization" title="Direct link to Step 4: Configure Domain Randomization">​</a></h2>
+<p>Domain randomization helps bridge the sim-to-real gap:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="material-randomization">Material Randomization<a href="#material-randomization" class="hash-link" aria-label="Direct link to Material Randomization" title="Direct link to Material Randomization">​</a></h3>
+<ol>
+<li>In the Synthetic Data panel, enable <strong>Domain Randomization</strong></li>
+<li>Add material randomization:<!-- -->
+<ul>
+<li>Randomize textures on walls and floors</li>
+<li>Vary material properties like roughness and metallic values</li>
+<li>Create diverse environmental appearances</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lighting-randomization">Lighting Randomization<a href="#lighting-randomization" class="hash-link" aria-label="Direct link to Lighting Randomization" title="Direct link to Lighting Randomization">​</a></h3>
+<ol>
+<li>Add lighting randomization:<!-- -->
+<ul>
+<li>Vary light intensities and colors</li>
+<li>Randomize light positions</li>
+<li>Change time-of-day lighting conditions</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="object-placement-randomization">Object Placement Randomization<a href="#object-placement-randomization" class="hash-link" aria-label="Direct link to Object Placement Randomization" title="Direct link to Object Placement Randomization">​</a></h3>
+<ol>
+<li>Configure random object placement:<!-- -->
+<ul>
+<li>Randomize positions of obstacles</li>
+<li>Vary object scales within reasonable ranges</li>
+<li>Randomize orientations</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-set-up-data-recording">Step 5: Set Up Data Recording<a href="#step-5-set-up-data-recording" class="hash-link" aria-label="Direct link to Step 5: Set Up Data Recording" title="Direct link to Step 5: Set Up Data Recording">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="create-data-capture-script">Create Data Capture Script<a href="#create-data-capture-script" class="hash-link" aria-label="Direct link to Create Data Capture Script" title="Direct link to Create Data Capture Script">​</a></h3>
+<ol>
+<li>In the Synthetic Data panel, configure the <strong>Data Capture</strong> settings</li>
+<li>Set the output directory for your generated data</li>
+<li>Configure the data format (typically PNG for images, JSON for annotations)</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recording-parameters">Recording Parameters<a href="#recording-parameters" class="hash-link" aria-label="Direct link to Recording Parameters" title="Direct link to Recording Parameters">​</a></h3>
+<ol>
+<li><strong>Frame Rate</strong>: Set appropriate recording rate (e.g., 1-10 FPS for static scenes, higher for dynamic scenes)</li>
+<li><strong>Sequence Length</strong>: Define how many frames to capture per sequence</li>
+<li><strong>Annotations</strong>: Select which annotation types to generate</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-execute-data-generation">Step 6: Execute Data Generation<a href="#step-6-execute-data-generation" class="hash-link" aria-label="Direct link to Step 6: Execute Data Generation" title="Direct link to Step 6: Execute Data Generation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="manual-recording">Manual Recording<a href="#manual-recording" class="hash-link" aria-label="Direct link to Manual Recording" title="Direct link to Manual Recording">​</a></h3>
+<ol>
+<li>Position your robot in the starting configuration</li>
+<li>Click the <strong>Play</strong> button to start simulation</li>
+<li>In the Synthetic Data panel, start data capture</li>
+<li>Move your robot around the environment to capture diverse viewpoints</li>
+<li>Stop data capture when finished</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="automated-recording">Automated Recording<a href="#automated-recording" class="hash-link" aria-label="Direct link to Automated Recording" title="Direct link to Automated Recording">​</a></h3>
+<ol>
+<li>Create a simple navigation script for your robot</li>
+<li>Program the robot to follow a path that captures diverse viewpoints</li>
+<li>Set up automatic data capture during the navigation</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-validate-generated-data">Step 7: Validate Generated Data<a href="#step-7-validate-generated-data" class="hash-link" aria-label="Direct link to Step 7: Validate Generated Data" title="Direct link to Step 7: Validate Generated Data">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quality-checks">Quality Checks<a href="#quality-checks" class="hash-link" aria-label="Direct link to Quality Checks" title="Direct link to Quality Checks">​</a></h3>
+<ol>
+<li>
+<p>Review a sample of generated images:</p>
+<ul>
+<li>Verify image quality and resolution</li>
+<li>Check that semantic segmentation is accurate</li>
+<li>Ensure bounding boxes align properly</li>
+</ul>
+</li>
+<li>
+<p>Validate annotation accuracy:</p>
+<ul>
+<li>Compare segmentation masks to original objects</li>
+<li>Verify bounding box coordinates</li>
+<li>Check that instance segmentation is correct</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quantity-requirements">Quantity Requirements<a href="#quantity-requirements" class="hash-link" aria-label="Direct link to Quantity Requirements" title="Direct link to Quantity Requirements">​</a></h3>
+<ol>
+<li>Ensure you have sufficient data for your training needs</li>
+<li>Verify data diversity across different scenarios</li>
+<li>Check that edge cases are adequately represented</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-8-organize-and-export-data">Step 8: Organize and Export Data<a href="#step-8-organize-and-export-data" class="hash-link" aria-label="Direct link to Step 8: Organize and Export Data" title="Direct link to Step 8: Organize and Export Data">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-structure">Data Structure<a href="#data-structure" class="hash-link" aria-label="Direct link to Data Structure" title="Direct link to Data Structure">​</a></h3>
+<p>Organize your data in a standard structure:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">dataset/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── images/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── rgb/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── depth/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── annotations/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── segmentation/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── bounding_boxes/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── instances/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── metadata.json</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="format-conversion">Format Conversion<a href="#format-conversion" class="hash-link" aria-label="Direct link to Format Conversion" title="Direct link to Format Conversion">​</a></h3>
+<p>If needed, convert data to your ML framework&#x27;s expected format:</p>
+<ul>
+<li>Convert annotations to COCO or Pascal VOC format</li>
+<li>Resize images if needed</li>
+<li>Normalize depth data</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-diversity">Data Diversity<a href="#data-diversity" class="hash-link" aria-label="Direct link to Data Diversity" title="Direct link to Data Diversity">​</a></h3>
+<ul>
+<li>Capture data from multiple viewpoints</li>
+<li>Include various lighting conditions</li>
+<li>Vary object configurations and positions</li>
+<li>Include dynamic and static scenarios</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quality-assurance">Quality Assurance<a href="#quality-assurance" class="hash-link" aria-label="Direct link to Quality Assurance" title="Direct link to Quality Assurance">​</a></h3>
+<ul>
+<li>Regularly validate generated data quality</li>
+<li>Implement automated validation checks</li>
+<li>Compare synthetic vs. real data distributions</li>
+<li>Monitor for artifacts or unrealistic elements</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-optimization">Performance Optimization<a href="#performance-optimization" class="hash-link" aria-label="Direct link to Performance Optimization" title="Direct link to Performance Optimization">​</a></h3>
+<ul>
+<li>Balance visual fidelity with generation speed</li>
+<li>Use appropriate scene complexity</li>
+<li>Optimize sensor configurations for your needs</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues-and-solutions">Common Issues and Solutions<a href="#common-issues-and-solutions" class="hash-link" aria-label="Direct link to Common Issues and Solutions" title="Direct link to Common Issues and Solutions">​</a></h3>
+<p><strong>Low-Quality Annotations:</strong></p>
+<ul>
+<li>Verify semantic labels are correctly assigned</li>
+<li>Check that objects have proper collision geometry</li>
+<li>Ensure annotation extension is properly configured</li>
+</ul>
+<p><strong>Performance Issues:</strong></p>
+<ul>
+<li>Reduce scene complexity during data generation</li>
+<li>Lower rendering resolution temporarily</li>
+<li>Disable non-essential visual effects</li>
+</ul>
+<p><strong>Insufficient Diversity:</strong></p>
+<ul>
+<li>Increase domain randomization parameters</li>
+<li>Add more environmental variations</li>
+<li>Create multiple scene configurations</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<p>Continue to learn about Isaac Sim configuration examples and best practices to optimize your synthetic data generation pipeline.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-sim/tutorials/generate-data.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Setting Up Isaac Sim Environment</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/ai-robot-brain/isaac-ros/perception-overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Isaac ROS Perception Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#step-1-enable-synthetic-data-extension" class="table-of-contents__link toc-highlight">Step 1: Enable Synthetic Data Extension</a></li><li><a href="#step-2-configure-camera-sensors-for-data-generation" class="table-of-contents__link toc-highlight">Step 2: Configure Camera Sensors for Data Generation</a></li><li><a href="#step-3-set-up-annotation-generation" class="table-of-contents__link toc-highlight">Step 3: Set Up Annotation Generation</a><ul><li><a href="#semantic-segmentation" class="table-of-contents__link toc-highlight">Semantic Segmentation</a></li><li><a href="#bounding-boxes" class="table-of-contents__link toc-highlight">Bounding Boxes</a></li><li><a href="#instance-segmentation" class="table-of-contents__link toc-highlight">Instance Segmentation</a></li></ul></li><li><a href="#step-4-configure-domain-randomization" class="table-of-contents__link toc-highlight">Step 4: Configure Domain Randomization</a><ul><li><a href="#material-randomization" class="table-of-contents__link toc-highlight">Material Randomization</a></li><li><a href="#lighting-randomization" class="table-of-contents__link toc-highlight">Lighting Randomization</a></li><li><a href="#object-placement-randomization" class="table-of-contents__link toc-highlight">Object Placement Randomization</a></li></ul></li><li><a href="#step-5-set-up-data-recording" class="table-of-contents__link toc-highlight">Step 5: Set Up Data Recording</a><ul><li><a href="#create-data-capture-script" class="table-of-contents__link toc-highlight">Create Data Capture Script</a></li><li><a href="#recording-parameters" class="table-of-contents__link toc-highlight">Recording Parameters</a></li></ul></li><li><a href="#step-6-execute-data-generation" class="table-of-contents__link toc-highlight">Step 6: Execute Data Generation</a><ul><li><a href="#manual-recording" class="table-of-contents__link toc-highlight">Manual Recording</a></li><li><a href="#automated-recording" class="table-of-contents__link toc-highlight">Automated Recording</a></li></ul></li><li><a href="#step-7-validate-generated-data" class="table-of-contents__link toc-highlight">Step 7: Validate Generated Data</a><ul><li><a href="#quality-checks" class="table-of-contents__link toc-highlight">Quality Checks</a></li><li><a href="#quantity-requirements" class="table-of-contents__link toc-highlight">Quantity Requirements</a></li></ul></li><li><a href="#step-8-organize-and-export-data" class="table-of-contents__link toc-highlight">Step 8: Organize and Export Data</a><ul><li><a href="#data-structure" class="table-of-contents__link toc-highlight">Data Structure</a></li><li><a href="#format-conversion" class="table-of-contents__link toc-highlight">Format Conversion</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#data-diversity" class="table-of-contents__link toc-highlight">Data Diversity</a></li><li><a href="#quality-assurance" class="table-of-contents__link toc-highlight">Quality Assurance</a></li><li><a href="#performance-optimization" class="table-of-contents__link toc-highlight">Performance Optimization</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues-and-solutions" class="table-of-contents__link toc-highlight">Common Issues and Solutions</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 AI Book Project. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

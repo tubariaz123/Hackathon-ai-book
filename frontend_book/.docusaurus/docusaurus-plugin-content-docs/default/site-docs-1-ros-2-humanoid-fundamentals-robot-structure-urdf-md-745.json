@@ -1,0 +1,28 @@
+{
+  "id": "ros2-humanoid-fundamentals/robot-structure-urdf",
+  "title": "Robot Structure with URDF",
+  "description": "Understanding URDF for humanoid robots and simulation readiness",
+  "source": "@site/docs/1-ros2-humanoid-fundamentals/robot-structure-urdf.md",
+  "sourceDirName": "1-ros2-humanoid-fundamentals",
+  "slug": "/ros2-humanoid-fundamentals/robot-structure-urdf",
+  "permalink": "/docs/ros2-humanoid-fundamentals/robot-structure-urdf",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1-ros2-humanoid-fundamentals/robot-structure-urdf.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Robot Structure with URDF",
+    "sidebar_label": "Robot Structure with URDF",
+    "description": "Understanding URDF for humanoid robots and simulation readiness"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Communication Model",
+    "permalink": "/docs/ros2-humanoid-fundamentals/communication-model"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/digital-twin-sim/intro"
+  }
+}

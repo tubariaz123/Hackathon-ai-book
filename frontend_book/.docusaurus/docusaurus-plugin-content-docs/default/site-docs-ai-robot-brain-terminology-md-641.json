@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/terminology",
+  "title": "Terminology and Definitions",
+  "description": "This document standardizes terminology used throughout the AI-Robot Brain (NVIDIA Isaac™) module to ensure consistency and clarity across all chapters.",
+  "source": "@site/docs/ai-robot-brain/terminology.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/terminology",
+  "permalink": "/docs/ai-robot-brain/terminology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/terminology.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Terminology and Definitions",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Robot Movement Execution with Nav2",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution"
+  },
+  "next": {
+    "title": "Cross-References and Integration Guide",
+    "permalink": "/docs/ai-robot-brain/cross-references"
+  }
+}

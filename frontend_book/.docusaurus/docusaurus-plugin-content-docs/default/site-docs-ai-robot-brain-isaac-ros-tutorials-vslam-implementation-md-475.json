@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+  "title": "Isaac ROS VSLAM Implementation Tutorial",
+  "description": "This tutorial will guide you through implementing and configuring Visual SLAM using Isaac ROS specifically for humanoid robot navigation. You'll learn how to set up visual-inertial SLAM, optimize parameters for humanoid applications, and integrate with navigation systems.",
+  "source": "@site/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation.md",
+  "sourceDirName": "ai-robot-brain/isaac-ros/tutorials",
+  "slug": "/ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+  "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Isaac ROS VSLAM Implementation Tutorial",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac ROS Perception Pipeline Tutorial",
+    "permalink": "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline"
+  },
+  "next": {
+    "title": "Nav2 Path Planning for Humanoid Robots",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/path-planning"
+  }
+}

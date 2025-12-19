@@ -1,0 +1,28 @@
+{
+  "id": "digital-twin-sim/sensor-simulation-validation",
+  "title": "Sensor Simulation & Validation",
+  "description": "Simulating sensors (lidar, cameras, IMU) in Gazebo and Unity with validation techniques",
+  "source": "@site/docs/2-digital-twin-sim/sensor-simulation-validation.md",
+  "sourceDirName": "2-digital-twin-sim",
+  "slug": "/digital-twin-sim/sensor-simulation-validation",
+  "permalink": "/docs/digital-twin-sim/sensor-simulation-validation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-digital-twin-sim/sensor-simulation-validation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Sensor Simulation & Validation",
+    "sidebar_label": "Sensor Simulation & Validation",
+    "description": "Simulating sensors (lidar, cameras, IMU) in Gazebo and Unity with validation techniques"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Digital Twins and HRI in Unity",
+    "permalink": "/docs/digital-twin-sim/digital-twins-hri-unity"
+  },
+  "next": {
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/ai-robot-brain/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/cross-references",
+  "title": "Cross-References and Integration Guide",
+  "description": "This guide provides connections between concepts across the different chapters of the AI-Robot Brain module, highlighting how Isaac Sim, Isaac ROS, and Nav2 work together in humanoid robotics applications.",
+  "source": "@site/docs/ai-robot-brain/cross-references.md",
+  "sourceDirName": "ai-robot-brain",
+  "slug": "/ai-robot-brain/cross-references",
+  "permalink": "/docs/ai-robot-brain/cross-references",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/cross-references.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Cross-References and Integration Guide",
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Terminology and Definitions",
+    "permalink": "/docs/ai-robot-brain/terminology"
+  },
+  "next": {
+    "title": "Complete Integration Guide",
+    "permalink": "/docs/ai-robot-brain/integration-guide"
+  }
+}

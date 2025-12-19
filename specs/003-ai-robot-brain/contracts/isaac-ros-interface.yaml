@@ -1,0 +1,176 @@
+# Isaac ROS Interface Contracts
+
+## Overview
+This document defines the interface contracts for Isaac ROS components that will be covered in the educational module. These contracts represent the ROS2 interfaces (topics, services, actions) that students will learn to work with.
+
+## Isaac Sim Bridge Interface
+
+### Topics
+
+#### `/isaac_sim/rgb_camera/image_raw`
+- **Type**: `sensor_msgs/Image`
+- **Purpose**: Raw RGB camera image data from simulation
+- **QoS**: Reliable, sensor data
+- **Frequency**: Configurable (typically 30Hz)
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - height, width: image dimensions
+  - encoding: image format (typically 'rgb8')
+  - data: raw image bytes
+
+#### `/isaac_sim/depth_camera/depth_image`
+- **Type**: `sensor_msgs/Image`
+- **Purpose**: Depth information from simulated depth sensor
+- **QoS**: Reliable, sensor data
+- **Frequency**: Configurable (typically 30Hz)
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - encoding: '32FC1' (32-bit float)
+  - data: depth values in meters
+
+#### `/isaac_sim/imu`
+- **Type**: `sensor_msgs/Imu`
+- **Purpose**: Inertial measurement unit data from simulated IMU
+- **QoS**: Reliable, sensor data
+- **Frequency**: High frequency (typically 100Hz+)
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - orientation: quaternion representation
+  - angular_velocity: 3D angular velocity vector
+  - linear_acceleration: 3D linear acceleration vector
+
+## Isaac ROS Perception Components
+
+### Topics
+
+#### `/isaac_ros/stereo_vo/visual_odometry`
+- **Type**: `nav_msgs/Odometry`
+- **Purpose**: Visual odometry data from stereo vision component
+- **QoS**: Reliable, sensor data
+- **Frequency**: Variable based on processing
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - child_frame_id: coordinate frame of the robot
+  - pose: position and orientation with covariance
+  - twist: velocity with covariance
+
+#### `/isaac_ros/pointcloud_fused`
+- **Type**: `sensor_msgs/PointCloud2`
+- **Purpose**: Fused 3D point cloud from multiple sensors
+- **QoS**: Reliable, sensor data
+- **Frequency**: Variable based on processing
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - height, width: point cloud dimensions
+  - fields: description of point properties
+  - data: binary point cloud data
+
+## Isaac ROS Navigation Components
+
+### Topics
+
+#### `/isaac_ros/vslam/pose`
+- **Type**: `geometry_msgs/PoseStamped`
+- **Purpose**: Pose estimate from visual SLAM component
+- **QoS**: Reliable, sensor data
+- **Frequency**: Variable based on processing
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - pose: position and orientation
+
+#### `/isaac_ros/vslam/map`
+- **Type**: `nav_msgs/OccupancyGrid`
+- **Purpose**: Occupancy grid map from VSLAM
+- **QoS**: Reliable, data
+- **Frequency**: As map updates
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - info: map metadata (resolution, origin, dimensions)
+  - data: occupancy values (-1: unknown, 0: free, 100: occupied)
+
+## Nav2 Navigation Interface
+
+### Topics
+
+#### `/nav2/move_base_simple/goal`
+- **Type**: `geometry_msgs/PoseStamped`
+- **Purpose**: Navigation goal for simple navigation
+- **QoS**: Reliable, commands
+- **Frequency**: As needed
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - pose: target position and orientation
+
+#### `/nav2/plan`
+- **Type**: `nav_msgs/Path`
+- **Purpose**: Planned path from Nav2
+- **QoS**: Reliable, data
+- **Frequency**: As path updates
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - poses: sequence of poses in the path
+
+### Actions
+
+#### `/nav2/navigate_to_pose`
+- **Type**: `nav2_msgs/action/NavigateToPose`
+- **Purpose**: Action interface for complex navigation
+- **Goal**: `nav2_msgs/action/NavigateToPose_Goal`
+  - pose: target pose with orientation
+  - behavior_tree: optional behavior tree ID
+- **Result**: `nav2_msgs/action/NavigateToPose_Result`
+  - error_code: navigation result code
+  - error_description: human-readable description
+- **Feedback**: `nav2_msgs/action/NavigateToPose_Feedback`
+  - current_pose: current robot position
+  - distance_remaining: meters to goal
+  - time_remaining: estimated time to goal
+
+## Isaac ROS Humanoid-Specific Interfaces
+
+### Topics
+
+#### `/isaac_ros/humanoid/kinematics/joint_states`
+- **Type**: `sensor_msgs/JointState`
+- **Purpose**: Joint positions, velocities, and efforts for humanoid
+- **QoS**: Reliable, sensor data
+- **Frequency**: High frequency (typically 100Hz+)
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - name: joint names
+  - position: joint positions (radians)
+  - velocity: joint velocities (rad/s)
+  - effort: joint efforts (Nm)
+
+#### `/isaac_ros/humanoid/center_of_mass`
+- **Type**: `geometry_msgs/PointStamped`
+- **Purpose**: Center of mass position for balance control
+- **QoS**: Reliable, sensor data
+- **Frequency**: Variable based on computation
+- **Expected fields**:
+  - header: timestamp and frame_id
+  - point: 3D position of center of mass
+
+## Error Handling and Status
+
+### Topics
+
+#### `/isaac_ros/status`
+- **Type**: `std_msgs/String`
+- **Purpose**: Component status and error reporting
+- **QoS**: Reliable, status
+- **Frequency**: As status changes
+- **Expected values**:
+  - "OK": Component operating normally
+  - "ERROR": Component in error state
+  - "WARNING": Component has non-critical issues
+  - "INITIALIZING": Component starting up
+
+## Quality of Service (QoS) Guidelines
+
+For educational purposes, students should understand these QoS patterns:
+
+- **Sensor data topics**: Use `sensor_data` QoS profile for best-effort delivery
+- **Commands topics**: Use `services` QoS profile for reliable delivery
+- **Status topics**: Use `default` QoS profile for reliable delivery
+- **High-frequency data**: Consider `best_effort` to prevent blocking

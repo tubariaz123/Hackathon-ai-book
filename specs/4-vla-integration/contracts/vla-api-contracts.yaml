@@ -1,0 +1,195 @@
+# VLA System API Contracts
+
+## Voice Command Processing API
+
+### POST /api/vla/voice/process
+Process audio input and return transcribed text with intent classification
+
+**Request:**
+```json
+{
+  "audio_data": "base64 encoded audio data",
+  "sample_rate": 16000,
+  "encoding": "wav",
+  "metadata": {
+    "source": "microphone_array",
+    "environment": "indoor",
+    "timestamp": "2025-12-17T19:30:00Z"
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "transcript": "Move forward by 1 meter",
+  "confidence_score": 0.92,
+  "intent": "navigation.move_forward",
+  "intent_parameters": {
+    "distance": 1.0,
+    "unit": "meter"
+  },
+  "processing_time_ms": 420,
+  "warnings": []
+}
+```
+
+**Errors:**
+- 400: Invalid audio format or malformed request
+- 429: Rate limit exceeded
+- 500: Processing error
+
+## LLM Cognitive Planning API
+
+### POST /api/vla/planning/generate
+Convert natural language instruction to structured action plan
+
+**Request:**
+```json
+{
+  "natural_language": "Please move to the kitchen and bring me a cup",
+  "context": {
+    "robot_position": {"x": 0.0, "y": 0.0, "z": 0.0},
+    "environment_map": "map_id_123",
+    "available_objects": ["cup", "bottle", "chair"],
+    "robot_capabilities": ["navigation", "manipulation", "grasping"]
+  },
+  "options": {
+    "max_plan_steps": 50,
+    "safety_level": "high",
+    "optimization_goal": "efficiency"
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "plan_id": "plan_456",
+  "status": "validated",
+  "actions": [
+    {
+      "action_type": "navigate",
+      "parameters": {
+        "target_location": {"x": 5.2, "y": 3.1, "z": 0.0},
+        "target_frame": "map"
+      },
+      "estimated_duration": 30.0
+    },
+    {
+      "action_type": "locate_object",
+      "parameters": {
+        "object_type": "cup",
+        "search_area": {"center": {"x": 5.2, "y": 3.1}, "radius": 2.0}
+      },
+      "estimated_duration": 10.0
+    },
+    {
+      "action_type": "grasp_object",
+      "parameters": {
+        "object_id": "cup_789",
+        "grasp_type": "top_grasp"
+      },
+      "estimated_duration": 5.0
+    }
+  ],
+  "estimated_total_duration": 45.0,
+  "confidence_score": 0.87,
+  "validation_results": {
+    "safety_check": "passed",
+    "feasibility_check": "passed",
+    "constraint_check": "passed"
+  }
+}
+```
+
+## Action Execution API
+
+### POST /api/vla/execution/execute
+Execute a validated action plan on the robot
+
+**Request:**
+```json
+{
+  "plan_id": "plan_456",
+  "plan": {
+    "actions": [
+      // ... action array from planning response
+    ]
+  },
+  "execution_options": {
+    "monitoring_enabled": true,
+    "recovery_enabled": true,
+    "timeout_seconds": 300
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "execution_id": "exec_789",
+  "status": "running",
+  "estimated_completion": "2025-12-17T19:35:00Z",
+  "current_action_index": 0,
+  "progress": 0.0
+}
+```
+
+### GET /api/vla/execution/{execution_id}/status
+Get status of ongoing execution
+
+**Response:**
+```json
+{
+  "execution_id": "exec_789",
+  "status": "completed",
+  "current_action_index": 3,
+  "progress": 1.0,
+  "result": {
+    "success": true,
+    "completion_time": "2025-12-17T19:34:30Z",
+    "actions_executed": 3,
+    "actions_failed": 0,
+    "metrics": {
+      "execution_time": 270.0,
+      "energy_consumption": 45.2,
+      "accuracy": 0.94
+    }
+  }
+}
+```
+
+## VLA Integration State API
+
+### GET /api/vla/system/state
+Get current state of the VLA integration system
+
+**Response:**
+```json
+{
+  "system_state": {
+    "voice_processor": "active",
+    "llm_planner": "active",
+    "action_executor": "active",
+    "vision_processor": "active"
+  },
+  "current_task": {
+    "execution_id": "exec_789",
+    "status": "completed",
+    "progress": 1.0
+  },
+  "performance_metrics": {
+    "voice_processing_latency": 85.2,
+    "llm_response_time": 1420.0,
+    "action_execution_success_rate": 0.94,
+    "system_uptime": 3600.0
+  },
+  "resource_usage": {
+    "cpu_percent": 65.3,
+    "memory_mb": 4096,
+    "gpu_utilization": 78.2
+  }
+}
+```

@@ -1,0 +1,28 @@
+{
+  "id": "vla-integration/llm-cognitive-planning",
+  "title": "Chapter 2: LLM-Based Cognitive Planning",
+  "description": "Overview",
+  "source": "@site/docs/vla-integration/llm-cognitive-planning.md",
+  "sourceDirName": "vla-integration",
+  "slug": "/vla-integration/llm-cognitive-planning",
+  "permalink": "/docs/vla-integration/llm-cognitive-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla-integration/llm-cognitive-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Chapter 2: LLM-Based Cognitive Planning",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intent Extraction for Robots",
+    "permalink": "/docs/vla-integration/voice-to-action/intent-extraction"
+  },
+  "next": {
+    "title": "Chapter 3: Capstone - Autonomous Humanoid",
+    "permalink": "/docs/vla-integration/capstone-autonomous-humanoid"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ai-robot-brain/nav2-humanoid/troubleshooting",
+  "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+  "description": "This guide provides solutions to common issues encountered when running Navigation 2 (Nav2) with humanoid robots. Humanoid navigation presents unique challenges due to balance requirements, kinematic constraints, and complex dynamics that differ from traditional wheeled robots.",
+  "source": "@site/docs/ai-robot-brain/nav2-humanoid/troubleshooting.md",
+  "sourceDirName": "ai-robot-brain/nav2-humanoid",
+  "slug": "/ai-robot-brain/nav2-humanoid/troubleshooting",
+  "permalink": "/docs/ai-robot-brain/nav2-humanoid/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ai-robot-brain/nav2-humanoid/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Nav2 for Humanoid Robots Troubleshooting Guide",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Robot Kinematic and Balance Constraints",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints"
+  },
+  "next": {
+    "title": "Nav2 Performance Optimization for Humanoid Robots",
+    "permalink": "/docs/ai-robot-brain/nav2-humanoid/performance-optimization"
+  }
+}
