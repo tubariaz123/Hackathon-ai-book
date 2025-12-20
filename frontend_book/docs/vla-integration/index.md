@@ -31,13 +31,13 @@ Before starting this module, you should have:
 
 This module is organized into four main chapters:
 
-1. [**Voice-to-Action**](./voice-to-action/index.md) - Learn to implement speech recognition systems using Whisper and extract robot-appropriate intents from spoken commands
+1. [**Voice-to-Action**](./voice-to-action) - Learn to implement speech recognition systems using Whisper and extract robot-appropriate intents from spoken commands
 
-2. [**LLM-Based Cognitive Planning**](./llm-cognitive-planning.md) - Design systems that convert natural language instructions to structured robot action plans using Large Language Models
+2. [**LLM-Based Cognitive Planning**](./llm-cognitive-planning) - Design systems that convert natural language instructions to structured robot action plans using Large Language Models
 
-3. [**Capstone: Autonomous Humanoid**](./capstone-autonomous-humanoid.md) - Integrate all components into an end-to-end VLA pipeline for complete autonomous humanoid operation
+3. [**Capstone: Autonomous Humanoid**](./capstone-autonomous-humanoid) - Integrate all components into an end-to-end VLA pipeline for complete autonomous humanoid operation
 
-4. [**Evaluation and Testing Framework**](./evaluation-framework.md) - Learn to assess system performance, validate safety measures, and ensure reliable operation in real-world scenarios
+4. [**Evaluation and Testing Framework**](./evaluation-framework) - Learn to assess system performance, validate safety measures, and ensure reliable operation in real-world scenarios
 
 ## Target Audience
 
@@ -45,4 +45,4 @@ This module is designed for advanced AI/robotics students and researchers workin
 
 ## Getting Started
 
-Begin with the [Voice-to-Action chapter](./voice-to-action.md) to understand how to implement speech recognition systems for robotic applications.
+Begin with the [Voice-to-Action chapter](./voice-to-action) to understand how to implement speech recognition systems for robotic applications.

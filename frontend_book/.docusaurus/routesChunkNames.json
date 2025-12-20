@@ -1,229 +1,186 @@
 {
-  "/__docusaurus/debug-a16": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
-  "/__docusaurus/debug/config-cb9": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
-  "/__docusaurus/debug/content-785": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    },
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-b7d": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
-  "/__docusaurus/debug/metadata-282": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
-  "/__docusaurus/debug/registry-80b": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
-  "/__docusaurus/debug/routes-507": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-831-3dd"
-    }
-  },
   "/docs-096": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docs-862-c65"
+      "plugin": "8627740f"
     }
   },
   "/docs-5b5": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---docs-935-398"
+    "__comp": "a7bd4aaa",
+    "version": "935f2afb"
   },
   "/docs-92f": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/docs/ai-robot-brain/-974": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-f-3-a-332"
+    "__comp": "17896441",
+    "content": "f3a134cb"
   },
   "/docs/ai-robot-brain/assessment-questions-f43": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-assessment-questionsbba-78d"
+    "__comp": "17896441",
+    "content": "bba4b34d"
   },
   "/docs/ai-robot-brain/cross-references-c53": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-cross-referencesa-66-bda"
+    "__comp": "17896441",
+    "content": "a66752d7"
   },
   "/docs/ai-robot-brain/integration-guide-42b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-integration-guide-95-c-712"
+    "__comp": "17896441",
+    "content": "95ceb3e0"
   },
   "/docs/ai-robot-brain/isaac-ros/configuration-examples-038": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-configuration-examples-5-bd-ea2"
+    "__comp": "17896441",
+    "content": "5bd25ccf"
   },
   "/docs/ai-robot-brain/isaac-ros/perception-overview-746": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-perception-overview-346-a84"
+    "__comp": "17896441",
+    "content": "3466ef59"
   },
   "/docs/ai-robot-brain/isaac-ros/troubleshooting-bdb": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-troubleshooting-2-de-251"
+    "__comp": "17896441",
+    "content": "2de181d6"
   },
   "/docs/ai-robot-brain/isaac-ros/tutorials/perception-pipeline-216": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-tutorials-perception-pipeline-733-9af"
+    "__comp": "17896441",
+    "content": "73350429"
   },
   "/docs/ai-robot-brain/isaac-ros/tutorials/vslam-implementation-a14": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-tutorials-vslam-implementation-475-529"
+    "__comp": "17896441",
+    "content": "4756cc96"
   },
   "/docs/ai-robot-brain/isaac-ros/vslam-navigation-126": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-ros-vslam-navigation-9-a-7-ec2"
+    "__comp": "17896441",
+    "content": "9a7600ae"
   },
   "/docs/ai-robot-brain/isaac-sim/configuration-examples-e85": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-configuration-examples-0-a-6-0c8"
+    "__comp": "17896441",
+    "content": "0a6cd450"
   },
   "/docs/ai-robot-brain/isaac-sim/introduction-c14": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-introductiona-11-652"
+    "__comp": "17896441",
+    "content": "a11aff3f"
   },
   "/docs/ai-robot-brain/isaac-sim/synthetic-data-559": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-synthetic-datab-70-129"
+    "__comp": "17896441",
+    "content": "b7081175"
   },
   "/docs/ai-robot-brain/isaac-sim/troubleshooting-016": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-troubleshooting-980-36c"
+    "__comp": "17896441",
+    "content": "98044e73"
   },
   "/docs/ai-robot-brain/isaac-sim/tutorials/generate-data-275": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-tutorials-generate-data-722-014"
+    "__comp": "17896441",
+    "content": "72240b98"
   },
   "/docs/ai-robot-brain/isaac-sim/tutorials/setup-environment-4d0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-isaac-sim-tutorials-setup-environment-280-767"
+    "__comp": "17896441",
+    "content": "280c1a29"
   },
   "/docs/ai-robot-brain/learning-objectives-5b6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-learning-objectives-21-e-478"
+    "__comp": "17896441",
+    "content": "21ec1d53"
   },
   "/docs/ai-robot-brain/nav2-humanoid/humanoid-constraints-007": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-humanoid-constraints-7-b-3-646"
+    "__comp": "17896441",
+    "content": "7b38c9f9"
   },
   "/docs/ai-robot-brain/nav2-humanoid/path-planning-786": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-path-planning-528-a18"
+    "__comp": "17896441",
+    "content": "5281d487"
   },
   "/docs/ai-robot-brain/nav2-humanoid/performance-optimization-32e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-performance-optimization-24-b-b51"
+    "__comp": "17896441",
+    "content": "24b2e3fc"
   },
   "/docs/ai-robot-brain/nav2-humanoid/troubleshooting-dd4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-troubleshootinga-75-853"
+    "__comp": "17896441",
+    "content": "a75d2dff"
   },
   "/docs/ai-robot-brain/nav2-humanoid/tutorials/movement-execution-bad": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-tutorials-movement-executionc-91-f70"
+    "__comp": "17896441",
+    "content": "c9137209"
   },
   "/docs/ai-robot-brain/nav2-humanoid/tutorials/nav2-configuration-11c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-nav-2-humanoid-tutorials-nav-2-configurationcfc-099"
+    "__comp": "17896441",
+    "content": "cfcd8d09"
   },
   "/docs/ai-robot-brain/quick-reference-06b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-quick-referencef-39-668"
+    "__comp": "17896441",
+    "content": "f3909970"
   },
   "/docs/ai-robot-brain/terminology-266": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ai-robot-brain-terminology-641-402"
+    "__comp": "17896441",
+    "content": "641ac91c"
   },
   "/docs/digital-twin-sim/digital-twins-hri-unity-aab": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-sim-digital-twins-hri-unitya-26-ef7"
+    "__comp": "17896441",
+    "content": "a26727bf"
   },
   "/docs/digital-twin-sim/intro-d5e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-sim-intro-750-bb8"
+    "__comp": "17896441",
+    "content": "750fb5c4"
   },
   "/docs/digital-twin-sim/physics-simulation-gazebo-df2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-sim-physics-simulation-gazebo-250-f3d"
+    "__comp": "17896441",
+    "content": "2509ca41"
   },
   "/docs/digital-twin-sim/sensor-simulation-validation-f47": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-sim-sensor-simulation-validationc-48-a6f"
+    "__comp": "17896441",
+    "content": "c48807ae"
   },
   "/docs/intro-aed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/docs/ros2-humanoid-fundamentals/communication-model-63e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-humanoid-fundamentals-communication-model-0-c-7-ad1"
+    "__comp": "17896441",
+    "content": "0c751a4d"
   },
   "/docs/ros2-humanoid-fundamentals/intro-to-ros2-1f8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-humanoid-fundamentals-intro-to-ros-2713-3ce"
+    "__comp": "17896441",
+    "content": "7137db1f"
   },
   "/docs/ros2-humanoid-fundamentals/robot-structure-urdf-338": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-humanoid-fundamentals-robot-structure-urdf-745-f04"
+    "__comp": "17896441",
+    "content": "745a26bf"
   },
   "/docs/vla-integration/-961": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-5-cc-c60"
+    "__comp": "17896441",
+    "content": "5cc66b29"
   },
   "/docs/vla-integration/capstone-autonomous-humanoid-284": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-capstone-autonomous-humanoide-41-011"
+    "__comp": "17896441",
+    "content": "e416cc21"
   },
   "/docs/vla-integration/evaluation-framework-2c1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-evaluation-frameworkf-45-7c8"
+    "__comp": "17896441",
+    "content": "f4539342"
   },
   "/docs/vla-integration/llm-cognitive-planning-690": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-llm-cognitive-planning-120-334"
+    "__comp": "17896441",
+    "content": "120301c9"
   },
   "/docs/vla-integration/spec-c02": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-specb-43-9e8"
+    "__comp": "17896441",
+    "content": "b43dfa5b"
   },
   "/docs/vla-integration/voice-to-action/-b69": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-voice-to-action-fab-06e"
+    "__comp": "17896441",
+    "content": "fab836c6"
   },
   "/docs/vla-integration/voice-to-action/intent-extraction-4ad": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-voice-to-action-intent-extraction-018-d4c"
+    "__comp": "17896441",
+    "content": "018887a1"
   },
   "/docs/vla-integration/voice-to-action/whisper-implementation-761": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-integration-voice-to-action-whisper-implementation-8-b-9-dac"
+    "__comp": "17896441",
+    "content": "8b97474a"
   },
   "/-6db": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---65-a-020"
+      "plugin": "65a6da31"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }
