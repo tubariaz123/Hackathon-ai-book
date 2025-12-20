@@ -35,7 +35,7 @@ export default function Home() {
                 <p>Understand what ROS 2 is and why it matters specifically for humanoid robotics. Learn about Distributed Data Service (DDS) concepts that underpin ROS 2's communication model.</p>
                 <Link
                   className="button button--primary button--outline"
-                  to="/docs/1-ros2-humanoid-fundamentals/intro-to-ros2">
+                  to="/docs/ros2-humanoid-fundamentals/intro-to-ros2">
                   Read Introduction
                 </Link>
               </div>
@@ -44,7 +44,7 @@ export default function Home() {
                 <p>Master the core communication patterns in ROS 2: nodes, topics, services, and actions. Learn to implement basic reply-based controller flows for humanoid robots.</p>
                 <Link
                   className="button button--primary button--outline"
-                  to="/docs/1-ros2-humanoid-fundamentals/communication-model">
+                  to="/docs/ros2-humanoid-fundamentals/communication-model">
                   Learn Communication
                 </Link>
               </div>
@@ -53,7 +53,7 @@ export default function Home() {
                 <p>Define humanoid robot structure using Unified Robot Description Format (URDF) for simulation readiness and proper kinematic representation.</p>
                 <Link
                   className="button button--primary button--outline"
-                  to="/docs/1-ros2-humanoid-fundamentals/robot-structure-urdf">
+                  to="/docs/ros2-humanoid-fundamentals/robot-structure-urdf">
                   Understand URDF
                 </Link>
               </div>
