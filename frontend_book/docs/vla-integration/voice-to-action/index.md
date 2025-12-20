@@ -1,5 +1,5 @@
 ---
-id: voice-to-action
+id: index
 title: "Chapter 1: Voice-to-Action"
 sidebar_position: 1
 ---
