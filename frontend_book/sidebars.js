@@ -105,7 +105,7 @@ const sidebars = {
           type: 'category',
           label: 'Voice-to-Action',
           items: [
-            'vla-integration/voice-to-action/index',
+            'vla-integration/voice-to-action/voice-to-action',
             'vla-integration/voice-to-action/whisper-implementation',
             'vla-integration/voice-to-action/intent-extraction',
           ],
