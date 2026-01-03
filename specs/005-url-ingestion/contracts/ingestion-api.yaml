@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: URL Ingestion API
+  version: 1.0.0
+  description: API for crawling URLs, generating embeddings, and storing in vector database
+paths:
+  /ingest:
+    post:
+      summary: Start the ingestion process for a URL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+                  description: The root URL to crawl
+                chunk_size:
+                  type: integer
+                  description: Size of text chunks
+                  default: 512
+                chunk_overlap:
+                  type: integer
+                  description: Overlap between chunks
+                  default: 50
+      responses:
+        '200':
+          description: Ingestion process started successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id:
+                    type: string
+                    description: ID of the ingestion job
+                  status:
+                    type: string
+                    description: Current status of the job
+        '400':
+          description: Invalid input parameters
+        '500':
+          description: Internal server error
+  /status/{job_id}:
+    get:
+      summary: Get the status of an ingestion job
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Job status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id:
+                    type: string
+                  status:
+                    type: string
+                    enum: [pending, processing, completed, failed]
+                  progress:
+                    type: number
+                    description: Progress percentage
+                  total_pages:
+                    type: integer
+                  processed_pages:
+                    type: integer

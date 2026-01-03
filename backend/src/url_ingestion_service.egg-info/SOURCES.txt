@@ -1,0 +1,7 @@
+pyproject.toml
+src/main.py
+src/url_ingestion_service.egg-info/PKG-INFO
+src/url_ingestion_service.egg-info/SOURCES.txt
+src/url_ingestion_service.egg-info/dependency_links.txt
+src/url_ingestion_service.egg-info/requires.txt
+src/url_ingestion_service.egg-info/top_level.txt
