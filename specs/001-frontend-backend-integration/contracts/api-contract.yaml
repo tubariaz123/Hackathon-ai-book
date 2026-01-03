@@ -1,0 +1,132 @@
+openapi: 3.0.0
+info:
+  title: RAG AI Agent API
+  description: API for the RAG (Retrieval-Augmented Generation) AI Agent that allows frontend to query book content
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Development server
+  - url: https://your-deployment-url.com
+    description: Production server
+
+paths:
+  /query:
+    post:
+      summary: Process a user query through the RAG agent
+      description: Sends a user query to the RAG agent and returns a grounded response based on book content
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        '200':
+          description: Successful response from the RAG agent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueryResponse'
+        '400':
+          description: Invalid request format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Unprocessable query (e.g., query cannot be answered from available content)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Returns the health status of the RAG agent service
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+components:
+  schemas:
+    QueryRequest:
+      type: object
+      properties:
+        query_text:
+          type: string
+          description: The user's question or query
+          example: "What is artificial intelligence?"
+        max_results:
+          type: integer
+          description: Maximum number of results to retrieve from the knowledge base (optional)
+          default: 5
+          minimum: 1
+          maximum: 20
+        grounding_required:
+          type: boolean
+          description: Whether strict grounding in retrieved content is required (optional)
+          default: true
+        model_name:
+          type: string
+          description: OpenAI model to use for the agent (optional)
+          default: "gpt-4-turbo"
+      required:
+        - query_text
+
+    QueryResponse:
+      type: object
+      properties:
+        query:
+          type: string
+          description: The original query text
+          example: "What is artificial intelligence?"
+        answer:
+          type: string
+          description: The agent's response to the query
+          example: "Artificial intelligence is a branch of computer science..."
+        sources:
+          type: array
+          items:
+            type: string
+          description: List of sources used to generate the response
+          example: ["Introduction to AI (https://book.com/docs/intro)", "AI Fundamentals (https://book.com/docs/fundamentals)"]
+        confidence:
+          type: number
+          format: float
+          description: Confidence score for the response (0.0 to 1.0)
+          example: 0.85
+        retrieved_context_count:
+          type: integer
+          description: Number of context items used to generate the response
+          example: 3
+
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: Health status of the service
+          example: "healthy"
+        message:
+          type: string
+          description: Additional information about the service status
+          example: "RAG AI Agent API is running"
+
+    ErrorResponse:
+      type: object
+      properties:
+        detail:
+          type: string
+          description: Description of the error
+          example: "Error processing query: Connection to backend failed"
