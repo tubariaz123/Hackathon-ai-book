@@ -6,19 +6,19 @@ date: 2025-12-27
 surface: agent
 model: claude-sonnet-4-5-20250929
 feature: frontend-backend-integration
-branch: 001-frontend-backend-integration
+branch: 008-frontend-backend-integration
 user: sik
 command: "/sp.specify"
 labels: ["specification", "frontend", "backend", "integration", "rag", "chatbot", "docusaurus", "fastapi"]
 links:
-  spec: specs/001-frontend-backend-integration/spec.md
+  spec: specs/008-frontend-backend-integration/spec.md
   plan: null
   ticket: null
   adr: null
   pr: null
 files:
- - specs/001-frontend-backend-integration/spec.md
- - specs/001-frontend-backend-integration/checklists/requirements.md
+ - specs/008-frontend-backend-integration/spec.md
+ - specs/008-frontend-backend-integration/checklists/requirements.md
 tests:
  -
 ---
