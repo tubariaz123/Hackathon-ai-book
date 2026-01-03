@@ -1,0 +1,24 @@
+[project]
+name = "url-ingestion-service"
+version = "0.1.0"
+description = "Service for crawling URLs, generating embeddings, and storing in Qdrant"
+authors = [{name = "AI Engineer", email = "engineer@example.com"}]
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.2",
+    "cohere>=4.4.3",
+    "qdrant-client>=1.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+]
