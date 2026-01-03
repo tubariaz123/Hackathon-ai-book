@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: url-ingestion-service
+Version: 0.1.0
+Summary: Service for crawling URLs, generating embeddings, and storing in Qdrant
+Author-email: AI Engineer <engineer@example.com>
+Requires-Python: >=3.11
+Requires-Dist: requests>=2.31.0
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: cohere>=4.4.3
+Requires-Dist: qdrant-client>=1.7.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=23.0; extra == "dev"
+Requires-Dist: flake8>=6.0; extra == "dev"

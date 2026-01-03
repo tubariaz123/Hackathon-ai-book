@@ -1,0 +1,9 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+cohere>=5.0.0
+qdrant-client>=1.7.0
+python-dotenv>=1.0.0
+openai>=1.0.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+openai-agents>=1.0.0
