@@ -7,10 +7,10 @@ export default {
   "title": "Physical AI and Humanoid Robotics",
   "tagline": "",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-site.example.com",
+  "url": "https://hackathon-ai-book-fawn.vercel.app",
   "baseUrl": "/",
   "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "projectName": "Physical AI and Humanoid Robotics",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -92,12 +92,12 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/tubariaz123/Hackathon-ai-book"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 AI Book Project. Built with Docusaurus."
+      "copyright": "Copyright © 2026 AI Book Project. Built with Docusaurus."
     },
     "prism": {
       "theme": {

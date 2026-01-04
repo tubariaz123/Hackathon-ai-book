@@ -1,0 +1,217 @@
+C:\Users\sik\AppData\Local\Programs\Python\Python314\Lib\site-packages\cohere\core\pydantic_utilities.py:13: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.datetime_parse import parse_date as parse_date
+INFO:httpx:HTTP Request: GET https://410128ca-a093-4648-aabb-93bec0588715.us-east4-0.gcp.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+C:\Users\sik\Desktop\ai-book\backend\main.py:61: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [4776]
+INFO:     Waiting for application startup.
+INFO:__main__:Initializing RAG agent on startup...
+INFO:__main__:RAG agent initialized successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53398 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53413 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53425 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53434 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '1075261fe9d52366d1de1dd5892ad4cb', 'date': 'Sun, 04 Jan 2026 05:42:26 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '43ac069a-b787-40dc-835d-7806fa1a52a6', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '1075261fe9d52366d1de1dd5892ad4cb', 'date': 'Sun, 04 Jan 2026 05:42:26 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '43ac069a-b787-40dc-835d-7806fa1a52a6', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:53435 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53443 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'Why ROS 2 Matters for Humanoids...'
+INFO:agent:Processing query through RAG agent: 'Why ROS 2 Matters for Humanoids...'
+INFO:agent:Starting content retrieval for query: 'Why ROS 2 Matters for Humanoids...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '6a379f1195c778c9e3db83fb3fd6c8d3', 'date': 'Sun, 04 Jan 2026 05:43:19 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '9fff97ab-fb14-4f30-bd40-ad718cacdabf', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '6a379f1195c778c9e3db83fb3fd6c8d3', 'date': 'Sun, 04 Jan 2026 05:43:19 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '9fff97ab-fb14-4f30-bd40-ad718cacdabf', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'Why ROS 2 Matters for Humanoids...'
+INFO:__main__:Successfully processed query: 'Why ROS 2 Matters for Humanoids...'
+INFO:     127.0.0.1:53449 - "POST /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'hello...'
+INFO:agent:Processing query through RAG agent: 'hello...'
+INFO:agent:Starting content retrieval for query: 'hello...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '9771ea2d61cf35b74e821788783b8df0', 'date': 'Sun, 04 Jan 2026 05:46:18 GMT', 'x-envoy-upstream-service-time': '19', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '681dc78d-3419-4537-b051-dbf0387509af', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '9771ea2d61cf35b74e821788783b8df0', 'date': 'Sun, 04 Jan 2026 05:46:18 GMT', 'x-envoy-upstream-service-time': '19', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '681dc78d-3419-4537-b051-dbf0387509af', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'hello...'
+INFO:__main__:Successfully processed query: 'hello...'
+INFO:     127.0.0.1:53477 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53528 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53560 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53569 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53576 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+INFO:retrieve:Successfully generated embeddings for 1 text(s)
+INFO:retrieve:Starting semantic search for query: 'What is ROS 2?...' (Attempt 1)
+INFO:httpx:HTTP Request: POST https://410128ca-a093-4648-aabb-93bec0588715.us-east4-0.gcp.cloud.qdrant.io:6333/collections/rag_embedding/points/query "HTTP/1.1 200 OK"
+INFO:retrieve:Successfully found 5 similar results for query: 'What is ROS 2?...'
+INFO:agent:Retrieved 5 results from Qdrant
+ERROR:agent:Error generating response: AgentRunner.run_sync() cannot be called when an event loop is already running.
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:53576 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53601 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53606 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'introduction...'
+INFO:agent:Processing query through RAG agent: 'introduction...'
+INFO:agent:Starting content retrieval for query: 'introduction...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'b08927ce94beca2d0915b215d72276a8', 'date': 'Sun, 04 Jan 2026 05:55:09 GMT', 'x-envoy-upstream-service-time': '17', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '67807d47-6f86-4d5b-9d33-82864d9123ff', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'b08927ce94beca2d0915b215d72276a8', 'date': 'Sun, 04 Jan 2026 05:55:09 GMT', 'x-envoy-upstream-service-time': '17', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '67807d47-6f86-4d5b-9d33-82864d9123ff', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'introduction...'
+INFO:__main__:Successfully processed query: 'introduction...'
+INFO:     127.0.0.1:53617 - "POST /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '688b2ff4ee77322ea1cbac23d9eabe71', 'date': 'Sun, 04 Jan 2026 05:55:22 GMT', 'x-envoy-upstream-service-time': '6', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'a5f1f258-0e26-4fcd-8553-351c51af7755', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '688b2ff4ee77322ea1cbac23d9eabe71', 'date': 'Sun, 04 Jan 2026 05:55:22 GMT', 'x-envoy-upstream-service-time': '6', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'a5f1f258-0e26-4fcd-8553-351c51af7755', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2...'
+INFO:__main__:Successfully processed query: 'What is ROS 2...'
+INFO:     127.0.0.1:53623 - "POST /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+INFO:retrieve:Successfully generated embeddings for 1 text(s)
+INFO:retrieve:Starting semantic search for query: 'What is ROS 2?...' (Attempt 1)
+INFO:httpx:HTTP Request: POST https://410128ca-a093-4648-aabb-93bec0588715.us-east4-0.gcp.cloud.qdrant.io:6333/collections/rag_embedding/points/query "HTTP/1.1 200 OK"
+INFO:retrieve:Successfully found 5 similar results for query: 'What is ROS 2?...'
+INFO:agent:Retrieved 5 results from Qdrant
+ERROR:agent:Error generating response: AgentRunner.run_sync() cannot be called when an event loop is already running.
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:53625 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53662 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '156c03a0742d4670c481b0624b00e927', 'date': 'Sun, 04 Jan 2026 06:00:19 GMT', 'x-envoy-upstream-service-time': '5', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '6921ce87-09f1-43cf-b6b0-7ea384948348', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '156c03a0742d4670c481b0624b00e927', 'date': 'Sun, 04 Jan 2026 06:00:19 GMT', 'x-envoy-upstream-service-time': '5', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '6921ce87-09f1-43cf-b6b0-7ea384948348', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:53667 - "POST /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '888051afc2361ee03c4295286dbbf758', 'date': 'Sun, 04 Jan 2026 06:00:41 GMT', 'x-envoy-upstream-service-time': '5', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'f061939b-eb05-4509-9c47-9c10b983d090', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '888051afc2361ee03c4295286dbbf758', 'date': 'Sun, 04 Jan 2026 06:00:41 GMT', 'x-envoy-upstream-service-time': '5', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'f061939b-eb05-4509-9c47-9c10b983d090', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:53673 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53683 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'Introduction to ROS 2 for Physical AI...'
+INFO:agent:Processing query through RAG agent: 'Introduction to ROS 2 for Physical AI...'
+INFO:agent:Starting content retrieval for query: 'Introduction to ROS 2 for Physical AI...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'c55eb370445e65e1be64b0192b5ec41f', 'date': 'Sun, 04 Jan 2026 06:01:31 GMT', 'x-envoy-upstream-service-time': '26', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'e19bca4e-6130-4927-aca6-9518a407a9b6', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'c55eb370445e65e1be64b0192b5ec41f', 'date': 'Sun, 04 Jan 2026 06:01:31 GMT', 'x-envoy-upstream-service-time': '26', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': 'e19bca4e-6130-4927-aca6-9518a407a9b6', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'Introduction to ROS 2 for Physical AI...'
+INFO:__main__:Successfully processed query: 'Introduction to ROS 2 for Physical AI...'
+INFO:     127.0.0.1:53683 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53702 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53741 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53767 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'hello...'
+INFO:agent:Processing query through RAG agent: 'hello...'
+INFO:agent:Starting content retrieval for query: 'hello...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'f9861e79bf4e8c1cfc4806a17ba6f3df', 'date': 'Sun, 04 Jan 2026 06:08:26 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '05d0dd61-1232-4189-b193-537218df1a61', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'f9861e79bf4e8c1cfc4806a17ba6f3df', 'date': 'Sun, 04 Jan 2026 06:08:26 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '05d0dd61-1232-4189-b193-537218df1a61', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'hello...'
+INFO:__main__:Successfully processed query: 'hello...'
+INFO:     127.0.0.1:53767 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53788 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'hello...'
+INFO:agent:Processing query through RAG agent: 'hello...'
+INFO:agent:Starting content retrieval for query: 'hello...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'a5061c6172867f492dc2b3bf98cf34b0', 'date': 'Sun, 04 Jan 2026 06:09:16 GMT', 'x-envoy-upstream-service-time': '13', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '6ae9948b-ebe4-4842-9ad4-cf77211bb534', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'a5061c6172867f492dc2b3bf98cf34b0', 'date': 'Sun, 04 Jan 2026 06:09:16 GMT', 'x-envoy-upstream-service-time': '13', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '6ae9948b-ebe4-4842-9ad4-cf77211bb534', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'hello...'
+INFO:__main__:Successfully processed query: 'hello...'
+INFO:     127.0.0.1:53788 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53828 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53838 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'hello...'
+INFO:agent:Processing query through RAG agent: 'hello...'
+INFO:agent:Starting content retrieval for query: 'hello...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '1164d332cfa0c35880805eb6b813a9c8', 'date': 'Sun, 04 Jan 2026 06:13:33 GMT', 'x-envoy-upstream-service-time': '13', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '62076310-5a63-4f17-b894-bf0a384921eb', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '1164d332cfa0c35880805eb6b813a9c8', 'date': 'Sun, 04 Jan 2026 06:13:33 GMT', 'x-envoy-upstream-service-time': '13', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '62076310-5a63-4f17-b894-bf0a384921eb', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'hello...'
+INFO:__main__:Successfully processed query: 'hello...'
+INFO:     127.0.0.1:53843 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53861 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'hello...'
+INFO:agent:Processing query through RAG agent: 'hello...'
+INFO:agent:Starting content retrieval for query: 'hello...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'be581af7d225b9d1b385890f1013ee78', 'date': 'Sun, 04 Jan 2026 06:14:07 GMT', 'x-envoy-upstream-service-time': '20', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '1d51afd4-46c2-45d7-b1ca-78f9dfbbd1ac', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'be581af7d225b9d1b385890f1013ee78', 'date': 'Sun, 04 Jan 2026 06:14:07 GMT', 'x-envoy-upstream-service-time': '20', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '1d51afd4-46c2-45d7-b1ca-78f9dfbbd1ac', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'hello...'
+INFO:__main__:Successfully processed query: 'hello...'
+INFO:     127.0.0.1:53861 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53959 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53969 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53980 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53990 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53998 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54010 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54015 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54022 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '93279c31dea381892df62e5ffaded8d4', 'date': 'Sun, 04 Jan 2026 06:25:30 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '16a15476-cfc4-451b-98b2-785e31b3586c', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '93279c31dea381892df62e5ffaded8d4', 'date': 'Sun, 04 Jan 2026 06:25:30 GMT', 'x-envoy-upstream-service-time': '14', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '16a15476-cfc4-451b-98b2-785e31b3586c', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:54022 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54059 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54246 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54246 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54392 - "GET /health HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '8c009046004ab788a04b32300db50427', 'date': 'Sun, 04 Jan 2026 06:44:44 GMT', 'x-envoy-upstream-service-time': '11', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '103c8edb-bbd8-415e-8284-96d60e012e85', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '8c009046004ab788a04b32300db50427', 'date': 'Sun, 04 Jan 2026 06:44:44 GMT', 'x-envoy-upstream-service-time': '11', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '103c8edb-bbd8-415e-8284-96d60e012e85', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:54400 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54497 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54502 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:__main__:Processing query: 'What is ROS 2?...'
+INFO:agent:Processing query through RAG agent: 'What is ROS 2?...'
+INFO:agent:Starting content retrieval for query: 'What is ROS 2?...'
+INFO:httpx:HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+ERROR:retrieve:Error generating embeddings: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '421101d0fba513536be91085c483356d', 'date': 'Sun, 04 Jan 2026 06:51:23 GMT', 'x-envoy-upstream-service-time': '8', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '5d70ade7-57c1-49dd-baf5-b5b07b349c9d', 'message': 'Please wait and try again later'}
+ERROR:agent:Error during content retrieval: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': '421101d0fba513536be91085c483356d', 'date': 'Sun, 04 Jan 2026 06:51:23 GMT', 'x-envoy-upstream-service-time': '8', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 429, body: {'id': '5d70ade7-57c1-49dd-baf5-b5b07b349c9d', 'message': 'Please wait and try again later'}
+WARNING:agent:No relevant content found for query: 'What is ROS 2?...'
+INFO:__main__:Successfully processed query: 'What is ROS 2?...'
+INFO:     127.0.0.1:54502 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54518 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54520 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54522 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54522 - "GET /openapi.json HTTP/1.1" 200 OK

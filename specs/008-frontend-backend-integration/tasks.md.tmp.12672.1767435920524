@@ -90,24 +90,24 @@ Display clear source attribution and confidence indicators to provide transparen
 **Independent Test**: Can be tested by submitting queries and verifying that responses include source links and confidence indicators.
 
 - [X] T040 [P] [US3] Enhance Source component with detailed information display in frontend_book/src/components/Chatbot/ChatMessage.jsx
-- [X] T041 [US3] Implement confidence score visualization in frontend_book/src/components/Chatbot/ChatMessage.jsx
-- [X] T042 [US3] Add clickable source links that open in new tab in frontend_book/src/components/Chatbot/ChatMessage.jsx
-- [X] T043 [US3] Implement source snippet display in frontend_book/src/components/Chatbot/ChatMessage.jsx
-- [X] T044 [US3] Add source quality indicators based on confidence scores in frontend_book/src/components/Chatbot/ChatMessage.jsx
-- [X] T045 [US3] Test source attribution and confidence display functionality
+- [ ] T041 [US3] Implement confidence score visualization in frontend_book/src/components/Chatbot/ChatMessage.jsx
+- [ ] T042 [US3] Add clickable source links that open in new tab in frontend_book/src/components/Chatbot/ChatMessage.jsx
+- [ ] T043 [US3] Implement source snippet display in frontend_book/src/components/Chatbot/ChatMessage.jsx
+- [ ] T044 [US3] Add source quality indicators based on confidence scores in frontend_book/src/components/Chatbot/ChatMessage.jsx
+- [ ] T045 [US3] Test source attribution and confidence display functionality
 
 ## Phase 6: Polish & Cross-Cutting Concerns
 
 ### Goal
 Finalize the implementation with error handling, validation, and user experience improvements.
 
-- [X] T050 Add input validation for user queries in frontend_book/src/components/Chatbot/ChatInput.jsx
-- [X] T051 Implement comprehensive error handling with user-friendly messages in frontend_book/src/components/Chatbot/Chatbot.jsx
-- [X] T052 Add accessibility features (keyboard navigation, screen reader support) to chatbot components
-- [X] T053 Implement responsive design for mobile and tablet devices
-- [X] T054 Add loading indicators and skeleton screens for better UX
-- [X] T055 Implement proper cleanup and unsubscription to prevent memory leaks
-- [X] T056 Add comprehensive error logging and debugging capabilities
-- [X] T057 Test full integration with Docusaurus site
-- [X] T058 Performance testing and optimization
-- [X] T059 Final end-to-end testing with all user stories implemented
+- [ ] T050 Add input validation for user queries in frontend_book/src/components/Chatbot/ChatInput.jsx
+- [ ] T051 Implement comprehensive error handling with user-friendly messages in frontend_book/src/components/Chatbot/Chatbot.jsx
+- [ ] T052 Add accessibility features (keyboard navigation, screen reader support) to chatbot components
+- [ ] T053 Implement responsive design for mobile and tablet devices
+- [ ] T054 Add loading indicators and skeleton screens for better UX
+- [ ] T055 Implement proper cleanup and unsubscription to prevent memory leaks
+- [ ] T056 Add comprehensive error logging and debugging capabilities
+- [ ] T057 Test full integration with Docusaurus site
+- [ ] T058 Performance testing and optimization
+- [ ] T059 Final end-to-end testing with all user stories implemented

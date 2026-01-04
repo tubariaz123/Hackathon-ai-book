@@ -26,7 +26,7 @@ class QueryRequest(BaseModel):
     query_text: str = Field(..., min_length=1, max_length=1000, description="The question to ask the agent")
     max_results: int = Field(default=5, ge=1, le=20, description="Number of results to retrieve from Qdrant")
     grounding_required: bool = Field(default=True, description="Whether strict grounding in retrieved content is required")
-    model_name: str = Field(default="gpt-4-turbo", description="OpenAI model to use for the agent")
+    model_name: str = Field(default="gpt-3.5-turbo", description="OpenAI model to use for the agent")
 
 
 class QueryResponse(BaseModel):
@@ -54,7 +54,7 @@ async def startup_event():
     global agent
     try:
         logger.info("Initializing RAG agent on startup...")
-        agent = create_rag_agent(model_name="gpt-4-turbo")
+        agent = create_rag_agent(model_name="gpt-3.5-turbo")
         logger.info("RAG agent initialized successfully")
     except Exception as e:
         logger.error(f"Failed to initialize RAG agent: {str(e)}")
@@ -129,7 +129,7 @@ async def list_models():
     Returns:
         List of available model names
     """
-    available_models = ["gpt-4-turbo", "gpt-3.5-turbo"]
+    available_models = ["gpt-3.5-turbo", "gpt-3.5-turbo"]
     return {"models": available_models}
 
 

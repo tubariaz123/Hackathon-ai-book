@@ -8,6 +8,7 @@ This module provides functionality for:
 """
 import os
 import logging
+import time
 from typing import List, Dict, Optional, Callable, Any
 from dataclasses import dataclass
 from dotenv import load_dotenv
@@ -71,12 +72,12 @@ class RAGAgent:
     grounding_enforcement: bool = False
 
 
-def create_rag_agent(model_name: str = "gpt-4-turbo") -> RAGAgent:
+def create_rag_agent(model_name: str = "gpt-3.5-turbo") -> RAGAgent:
     """
     Initialize and return a RAG agent with specified OpenAI model.
 
     Args:
-        model_name: The OpenAI model to use (default: "gpt-4-turbo")
+        model_name: The OpenAI model to use (default: "gpt-3.5-turbo")
 
     Returns:
         RAGAgent object configured for grounded responses
