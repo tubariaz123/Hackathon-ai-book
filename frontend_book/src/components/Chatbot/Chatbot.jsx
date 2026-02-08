@@ -90,7 +90,7 @@ const Chatbot = () => {
         session_id: sessionId,
         max_results: 5,
         grounding_required: true,
-        model_name: "gpt-4-turbo"
+        model_name: "gemini-2.5-flash"
       };
 
       // Send query to backend

@@ -12,23 +12,21 @@ import time
 from typing import List, Dict, Optional, Callable, Any
 from dataclasses import dataclass
 from dotenv import load_dotenv
-from agents import Agent, Runner
-from pydantic import BaseModel, Field
 import sys
 import os
-from agents import OpenAIChatCompletionsModel
-from openai import AsyncOpenAI
+import warnings
 
-ROUTER_API_KEY="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"
-client= AsyncOpenAI(
-    api_key=ROUTER_API_KEY,
-    base_url="https://openrouter.ai/api/v1"
+# Suppress the deprecation warning before importing the module
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
-)
-third_party_model= OpenAIChatCompletionsModel(
-    openai_client=client,
-    model="mistralai/devstral-2512:free"
-)
+import google.generativeai as genai
+
+# Configure Google GenAI with the provided API key
+GEMINI_API_KEY = "AIzaSyA08apsET3nibiGbVb0D-rl78h99SqcG5s"
+genai.configure(api_key=GEMINI_API_KEY)
+
+# Select the Gemini model
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 
 # Add the backend directory to the path so we can import from it when run from project root
@@ -176,17 +174,19 @@ def query_agent(agent: RAGAgent, query_text: str, top_k: int = 5) -> AgentRespon
     full_context = f"Context:\n{context_text}\n\nQuestion: {query_text}"
 
     try:
-        # Create an agent using the OpenAI Agents SDK with the system prompt
-        rag_agent = Agent(
-            name="RAG Assistant",
-            instructions=agent.system_prompt,
-            model=third_party_model,
+        # Use Google Gemini API to generate response with the context and system prompt
+        # Combine system prompt and user query
+        combined_prompt = f"{agent.system_prompt}\n\n{full_context}"
+
+        response = model.generate_content(
+            combined_prompt,
+            generation_config={
+                "temperature": 0.7,
+                "max_output_tokens": 1000,
+            }
         )
 
-        # Run the agent with the full context
-        result = Runner.run_sync(rag_agent, full_context)
-
-        answer = result.final_output
+        answer = response.text
 
         # Calculate a basic confidence score based on the number and relevance of retrieved results
         avg_score = sum(result.score for result in retrieved_results) / len(retrieved_results) if retrieved_results else 0.0
@@ -220,14 +220,36 @@ def query_agent(agent: RAGAgent, query_text: str, top_k: int = 5) -> AgentRespon
         )
 
     except Exception as e:
-        logger.error(f"Error generating response: {str(e)}")
-        return AgentResponse(
-            query=query_text,
-            answer="I encountered an error while processing your request. Please try again.",
-            retrieved_context=retrieved_results,
-            sources=_format_sources(retrieved_results),
-            confidence=0.0
-        )
+        # Handle specific Gemini API errors
+        error_message = str(e).lower()
+        if "404" in error_message and "model" in error_message:
+            logger.error(f"Gemini model not found or accessible: {str(e)}")
+            return AgentResponse(
+                query=query_text,
+                answer="The AI model is currently not accessible. Please check the API configuration and model availability.",
+                retrieved_context=retrieved_results,
+                sources=_format_sources(retrieved_results),
+                confidence=0.0
+            )
+        elif "api" in error_message or "key" in error_message or "auth" in error_message:
+            logger.error(f"Gemini API authentication or authorization error: {str(e)}")
+            return AgentResponse(
+                query=query_text,
+                answer="There is an issue with the API key or authentication. Please verify the Google Gemini API configuration.",
+                retrieved_context=retrieved_results,
+                sources=_format_sources(retrieved_results),
+                confidence=0.0
+            )
+        else:
+            # For other errors, fall back to the original error handling
+            logger.error(f"Error generating response: {str(e)}")
+            return AgentResponse(
+                query=query_text,
+                answer="I encountered an error while processing your request. Please try again.",
+                retrieved_context=retrieved_results,
+                sources=_format_sources(retrieved_results),
+                confidence=0.0
+            )
 
 
 def enforce_grounding(response_text: str, retrieved_context: List[RetrievalResult]) -> bool:

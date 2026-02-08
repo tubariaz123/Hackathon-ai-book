@@ -33,13 +33,23 @@ co = cohere.Client(cohere_api_key)
 # Initialize Qdrant client
 qdrant_url = os.getenv("QDRANT_URL")
 qdrant_api_key = os.getenv("QDRANT_API_KEY")
-if not qdrant_url or not qdrant_api_key:
-    raise ValueError("QDRANT_URL and QDRANT_API_KEY environment variables are required")
-qdrant_client = QdrantClient(
-    url=qdrant_url,
-    api_key=qdrant_api_key,
-    timeout=60.0,  # Set timeout to 60 seconds
-)
+
+if not qdrant_url:
+    raise ValueError("QDRANT_URL environment variable is required")
+
+# Determine if this is a local instance based on URL
+if "localhost" in qdrant_url or qdrant_url.startswith('.') or qdrant_url.startswith('/'):
+    # For local instance, use path-based connection
+    qdrant_client = QdrantClient(path="./qdrant_data")  # Use local file-based storage
+else:
+    # For remote/cloud instance
+    if not qdrant_api_key:
+        raise ValueError("QDRANT_API_KEY environment variable is required for remote Qdrant instances")
+    qdrant_client = QdrantClient(
+        url=qdrant_url,
+        api_key=qdrant_api_key,
+        timeout=60.0,  # Set timeout to 60 seconds
+    )
 
 
 @dataclass

@@ -59,7 +59,7 @@ const apiService = {
       session_id: queryData.sessionId || queryData.session_id,
       max_results: queryData.maxResults || queryData.max_results || 5,
       grounding_required: queryData.groundingRequired || queryData.grounding_required || true,
-      model_name: queryData.modelName || queryData.model_name || "gpt-4-turbo"
+      model_name: queryData.modelName || queryData.model_name || "gemini-2.5-flash"
     };
 
     // Log the API call for debugging
